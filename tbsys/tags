@@ -1,0 +1,1134 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ARG_NEW	src/Memory.hpp	80;"	d
+ARG_NEW	src/Memory.hpp	87;"	d
+ATOMIC_INIT	src/atomic.h	53;"	d
+AliveTest	test/testthread.cpp	/^     AliveTest():$/;"	f	class:AliveTest
+AliveTest	test/testthread.cpp	/^class AliveTest : public testBase$/;"	c	file:
+AliveTestThread	test/testthread.cpp	/^    AliveTestThread(CondVar& childCreated, CondVar& parentReady ):$/;"	f	class:AliveTestThread
+AliveTestThread	test/testthread.cpp	/^class AliveTestThread : public Thread$/;"	c	file:
+AliveTestThreadPtr	test/testthread.cpp	/^typedef Handle<AliveTestThread> AliveTestThreadPtr;$/;"	t	file:
+BadThreadControlException	src/ThreadException.cpp	/^BadThreadControlException::BadThreadControlException(const char* file, int line) :$/;"	f	class:tbutil::BadThreadControlException
+BadThreadControlException	src/ThreadException.h	/^class BadThreadControlException : public Exception$/;"	c	namespace:tbutil
+BoolSeq	src/tbsys.h	/^typedef ::std::vector<bool> BoolSeq;$/;"	t	namespace:tbutil
+Byte	src/tbsys.h	/^typedef unsigned char Byte;$/;"	t	namespace:tbutil
+ByteBuffer	src/bytebuffer.cpp	/^ByteBuffer::ByteBuffer()$/;"	f	class:ByteBuffer
+ByteBuffer	src/bytebuffer.cpp	/^ByteBuffer::ByteBuffer(const ByteBuffer& rhs)$/;"	f	class:ByteBuffer
+ByteBuffer	src/bytebuffer.cpp	/^ByteBuffer::ByteBuffer(const char* data, uint32_t offset, uint32_t size)$/;"	f	class:ByteBuffer
+ByteBuffer	src/bytebuffer.cpp	/^ByteBuffer::ByteBuffer(uint32_t size)$/;"	f	class:ByteBuffer
+ByteBuffer	src/bytebuffer.h	/^    class ByteBuffer$/;"	c	namespace:tbutil
+ByteSeq	src/tbsys.h	/^typedef ::std::vector< Byte> ByteSeq;$/;"	t	namespace:tbutil
+CConfig	src/config.cpp	/^    CConfig::CConfig()$/;"	f	class:tbsys::CConfig
+CConfig	src/config.h	/^    class           CConfig {$/;"	c	namespace:tbsys
+CDefaultRunnable	src/defaultrunnable.cpp	/^CDefaultRunnable::CDefaultRunnable(int threadCount) {$/;"	f	class:tbsys::CDefaultRunnable
+CDefaultRunnable	src/defaultrunnable.h	/^class CDefaultRunnable : public Runnable {$/;"	c	namespace:tbsys
+CFileQueue	src/filequeue.cpp	/^    CFileQueue::CFileQueue(char *rootPath, char *queueName, int maxFileSize)$/;"	f	class:tbsys::CFileQueue
+CFileQueue	src/filequeue.h	/^    class CFileQueue {$/;"	c	namespace:tbsys
+CFileQueueThread	src/filequeuethread.cpp	/^    CFileQueueThread::CFileQueueThread(CFileQueue *queue, int threadCount, IQueueHandler *handler, void *args) : $/;"	f	class:tbsys::CFileQueueThread
+CFileQueueThread	src/filequeuethread.h	/^    class CFileQueueThread : public CDefaultRunnable {$/;"	c	namespace:tbsys
+CFileUtil	src/fileutil.h	/^    class CFileUtil {$/;"	c	namespace:tbsys
+CLEAR_BEGIN	src/PublicDefine.h	184;"	d
+CLEAR_END	src/PublicDefine.h	196;"	d
+CLockGuard	src/tblockguard.h	/^        CLockGuard(const T& lock, bool block = true) : _lock(lock)$/;"	f	class:tbsys::CLockGuard
+CLockGuard	src/tblockguard.h	/^    class CLockGuard$/;"	c	namespace:tbsys
+CLogger	src/tblog.cpp	/^CLogger::CLogger() {$/;"	f	class:tbsys::CLogger
+CLogger	src/tblog.h	/^class           CLogger {$/;"	c	namespace:tbsys
+CMyHandler	test/testfilequeue.cpp	/^class CMyHandler : public IQueueHandler$/;"	c	file:
+CMyHandler	test/testqueuethread.cpp	/^class CMyHandler : public IQueueHandler$/;"	c	file:
+CNetUtil	src/tbnetutil.h	/^class CNetUtil {$/;"	c	namespace:tbsys
+CONSTRUCT	src/Memory.hpp	139;"	d
+CONSTRUCT	src/Memory.hpp	146;"	d
+CProcess	src/process.h	/^    class CProcess {$/;"	c	namespace:tbsys
+CQueueThread	src/queuethread.cpp	/^    CQueueThread::CQueueThread(int threadCount, IQueueHandler *handler, void *args) $/;"	f	class:tbsys::CQueueThread
+CQueueThread	src/queuethread.h	/^    class CQueueThread : public CDefaultRunnable {$/;"	c	namespace:tbsys
+CRLock	src/tbrwlock.h	/^        CRLock(pthread_rwlock_t* lock) : _rlock(lock) {}$/;"	f	class:tbsys::CRLock
+CRLock	src/tbrwlock.h	/^    class CRLock$/;"	c	namespace:tbsys
+CRLockGuard	src/tbrwlock.h	/^        CRLockGuard(const CRWLock& rwlock, bool block = true) : _guard((*rwlock.rlock()), block) {}$/;"	f	class:tbsys::CRLockGuard
+CRLockGuard	src/tbrwlock.h	/^    class CRLockGuard$/;"	c	namespace:tbsys
+CRWLock	src/tbrwlock.cpp	/^CRWLock::CRWLock(ELockMode lockMode)$/;"	f	class:CRWLock
+CRWLock	src/tbrwlock.h	/^    class CRWLock $/;"	c	namespace:tbsys
+CRWSimpleLock	src/tbrwlock.cpp	/^CRWSimpleLock::CRWSimpleLock(ELockMode lockMode) $/;"	f	class:CRWSimpleLock
+CRWSimpleLock	src/tbrwlock.h	/^    class CRWSimpleLock$/;"	c	namespace:tbsys
+CStringUtil	src/stringutil.h	/^    class CStringUtil {$/;"	c	namespace:tbsys
+CThread	src/thread.h	/^    CThread() {$/;"	f	class:tbsys::CThread
+CThread	src/thread.h	/^class CThread {$/;"	c	namespace:tbsys
+CThreadCond	src/threadcond.h	/^    CThreadCond() {$/;"	f	class:tbsys::CThreadCond
+CThreadCond	src/threadcond.h	/^class CThreadCond : public CThreadMutex {$/;"	c	namespace:tbsys
+CThreadGuard	src/threadmutex.h	/^    CThreadGuard(CThreadMutex *mutex)$/;"	f	class:tbsys::CThreadGuard
+CThreadGuard	src/threadmutex.h	/^class CThreadGuard$/;"	c	namespace:tbsys
+CThreadMutex	src/threadmutex.h	/^    CThreadMutex() {$/;"	f	class:tbsys::CThreadMutex
+CThreadMutex	src/threadmutex.h	/^class CThreadMutex {$/;"	c	namespace:tbsys
+CTimeUtil	src/tbtimeutil.h	/^class CTimeUtil {$/;"	c	namespace:tbsys
+CWLock	src/tbrwlock.h	/^        CWLock(pthread_rwlock_t* lock) : _wlock(lock) {}$/;"	f	class:tbsys::CWLock
+CWLock	src/tbrwlock.h	/^    class CWLock$/;"	c	namespace:tbsys
+CWLockGuard	src/tbrwlock.h	/^        CWLockGuard(const CRWLock& rwlock, bool block = true) : _guard((*rwlock.wlock()), block) {}$/;"	f	class:tbsys::CWLockGuard
+CWLockGuard	src/tbrwlock.h	/^    class CWLockGuard$/;"	c	namespace:tbsys
+C_CATCH	src/PublicDefine.h	115;"	d
+C_PRINT_TRY	src/PublicDefine.h	104;"	d
+C_TRY	src/PublicDefine.h	100;"	d
+Clock	src/Time.h	/^    enum Clock { Realtime, Monotonic };$/;"	g	class:tbutil::Time
+Cond	src/Cond.cpp	/^Cond::Cond()$/;"	f	class:tbutil::Cond
+Cond	src/Cond.h	/^class Cond : private noncopyable$/;"	c	namespace:tbutil
+CondVar	test/testthread.cpp	/^    CondVar():$/;"	f	class:CondVar
+CondVar	test/testthread.cpp	/^class CondVar : public Monitor<RecMutex>$/;"	c	file:
+ConstMemFun	src/Functional.h	/^    explicit ConstMemFun(MemberFN p) : _mfn(p) { }$/;"	f	class:tbutil::ConstMemFun
+ConstMemFun	src/Functional.h	/^class ConstMemFun : public std::unary_function<H, R>$/;"	c	namespace:tbutil
+CtrlCHandler	src/CtrlCHandler.cpp	/^CtrlCHandler::CtrlCHandler(CtrlCHandlerCallback callback)$/;"	f	class:tbutil::CtrlCHandler
+CtrlCHandler	src/CtrlCHandler.h	/^class CtrlCHandler$/;"	c	namespace:tbutil
+CtrlCHandlerCallback	src/CtrlCHandler.h	/^typedef void (*CtrlCHandlerCallback)(int);$/;"	t	namespace:tbutil
+CtrlCHandlerException	src/CtrlCHandler.cpp	/^CtrlCHandlerException::CtrlCHandlerException(const char* file, int line) :$/;"	f	class:tbutil::CtrlCHandlerException
+CtrlCHandlerException	src/CtrlCHandler.h	/^class CtrlCHandlerException : public Exception$/;"	c	namespace:tbutil
+DEFALUT_LIST_SIZE_MAX	src/ThreadPool.h	30;"	d
+DEFAUTL_STACK_SIZE	src/ThreadPool.h	29;"	d
+DestroyTask	test/testTimer.cpp	/^    DestroyTask(const tbutil::TimerPtr& timer) :$/;"	f	class:DestroyTask
+DestroyTask	test/testTimer.cpp	/^class DestroyTask : public TimerTask, Monitor<Mutex>$/;"	c	file:
+DestroyTaskPtr	test/testTimer.cpp	/^typedef Handle<DestroyTask> DestroyTaskPtr;$/;"	t	file:
+Double	src/tbsys.h	/^typedef double Double;$/;"	t	namespace:tbutil
+DoubleSeq	src/tbsys.h	/^typedef ::std::vector< Double> DoubleSeq;$/;"	t	namespace:tbutil
+ELockMode	src/tbrwlock.h	/^    enum ELockMode$/;"	g	namespace:tbsys
+Entry	src/profiler.h	/^	Entry(const std::string& message, Entry *parent, Entry *first) {$/;"	f	class:tbsys::util::Entry
+Entry	src/profiler.h	/^class Entry$/;"	c	namespace:tbsys::util
+EventHandlerThread	src/ThreadPool.cpp	/^ThreadPool::EventHandlerThread::EventHandlerThread(const ThreadPool* pool) $/;"	f	class:tbutil::ThreadPool::EventHandlerThread
+EventHandlerThread	src/ThreadPool.h	/^    class EventHandlerThread : public tbutil::Thread$/;"	c	class:tbutil::ThreadPool
+Exception	src/Exception.cpp	/^Exception::Exception() :$/;"	f	class:tbutil::Exception
+Exception	src/Exception.cpp	/^Exception::Exception(const char* file, int line) :$/;"	f	class:tbutil::Exception
+Exception	src/Exception.h	/^class Exception : public std::exception$/;"	c	namespace:tbutil
+FRIEND_DEL	src/Memory.hpp	322;"	d
+FRIEND_DEL	src/Memory.hpp	333;"	d
+FRIEND_DEL_A	src/Memory.hpp	360;"	d
+FRIEND_DEL_A	src/Memory.hpp	371;"	d
+FRIEND_NEW	src/Memory.hpp	169;"	d
+FRIEND_NEW	src/Memory.hpp	176;"	d
+FRIEND_NEW_A	src/Memory.hpp	200;"	d
+FRIEND_NEW_A	src/Memory.hpp	207;"	d
+Float	src/tbsys.h	/^typedef float Float;$/;"	t	namespace:tbutil
+FloatSeq	src/tbsys.h	/^typedef ::std::vector< Float> FloatSeq;$/;"	t	namespace:tbutil
+GOTO_CLEAR	src/PublicDefine.h	137;"	d
+GOTO_PRINT_CLEAR	src/PublicDefine.h	168;"	d
+Handle	src/Handle.h	/^    Handle(T* p = 0)$/;"	f	class:tbutil::Handle
+Handle	src/Handle.h	/^    Handle(const Handle& r)$/;"	f	class:tbutil::Handle
+Handle	src/Handle.h	/^    Handle(const Handle<Y>& r)$/;"	f	class:tbutil::Handle
+Handle	src/Handle.h	/^class Handle : public HandleBase<T>$/;"	c	namespace:tbutil
+HandleBase	src/Handle.h	/^class HandleBase$/;"	c	namespace:tbutil
+INVALID_SOCKET	src/Network.h	30;"	d
+IQueueHandler	src/iqueuehandler.h	/^class IQueueHandler {$/;"	c	namespace:tbsys
+IllegalArgumentException	src/Exception.cpp	/^IllegalArgumentException::IllegalArgumentException(const char* file, int line) :$/;"	f	class:tbutil::IllegalArgumentException
+IllegalArgumentException	src/Exception.cpp	/^IllegalArgumentException::IllegalArgumentException(const char* file, int line, const string& r) :$/;"	f	class:tbutil::IllegalArgumentException
+IllegalArgumentException	src/Exception.h	/^class IllegalArgumentException : public Exception$/;"	c	namespace:tbutil
+Int	src/tbsys.h	/^typedef int Int;$/;"	t	namespace:tbutil
+Int64	src/tbsys.h	/^    typedef __int64 Int64;$/;"	t	namespace:tbutil
+Int64	src/tbsys.h	/^    typedef long Int64;$/;"	t	namespace:tbutil
+Int64	src/tbsys.h	/^    typedef long long Int64;$/;"	t	namespace:tbutil
+IntSeq	src/tbsys.h	/^typedef ::std::vector< Int> IntSeq;$/;"	t	namespace:tbutil
+InvalidTimeoutException	src/ThreadException.cpp	/^InvalidTimeoutException::InvalidTimeoutException(const char* file, int line, $/;"	f	class:tbutil::InvalidTimeoutException
+InvalidTimeoutException	src/ThreadException.h	/^class InvalidTimeoutException : public Exception$/;"	c	namespace:tbutil
+JUST_BREAK	src/PublicDefine.h	52;"	d
+JUST_CONTINUE	src/PublicDefine.h	42;"	d
+JUST_RETURN	src/PublicDefine.h	62;"	d
+LOCK	src/atomic.h	44;"	d
+LinkList	src/linklist.h	/^LinkList<NodeT>::LinkList()$/;"	f	class:tbsys::LinkList
+LinkList	src/linklist.h	/^class LinkList$/;"	c	namespace:tbsys
+Lock	src/Monitor.h	/^    typedef LockT<Monitor<T> > Lock;$/;"	t	class:tbutil::Monitor
+Lock	src/Mutex.h	/^    typedef LockT<Mutex> Lock;$/;"	t	class:tbutil::Mutex
+Lock	src/RecMutex.h	/^    typedef LockT<RecMutex> Lock;$/;"	t	class:tbutil::RecMutex
+Lock	src/StaticMutex.h	/^    typedef LockT<StaticMutex> Lock;$/;"	t	class:tbutil::StaticMutex
+LockState	src/Mutex.h	/^    struct LockState$/;"	s	class:tbutil::Mutex
+LockState	src/RecMutex.h	/^    struct LockState$/;"	s	class:tbutil::RecMutex
+LockState	src/StaticMutex.h	/^    struct LockState$/;"	s	class:tbutil::StaticMutex
+LockT	src/Lock.h	/^    LockT(const T& mutex) :$/;"	f	class:tbutil::LockT
+LockT	src/Lock.h	/^    LockT(const T& mutex, bool) :$/;"	f	class:tbutil::LockT
+LockT	src/Lock.h	/^class LockT$/;"	c	namespace:tbutil
+Long	src/tbsys.h	/^typedef Int64 Long;$/;"	t	namespace:tbutil
+LongSeq	src/tbsys.h	/^typedef ::std::vector< Long> LongSeq;$/;"	t	namespace:tbutil
+MAX_ERROR_MSG_LEN	src/bytebuffer.h	/^                    static const uint32_t MAX_ERROR_MSG_LEN = 256;$/;"	m	class:tbutil::ByteBuffer::out_of_range
+MAX_FILENAME_LEN	src/PublicDefine.h	33;"	d
+MAX_STR_FIELD_NUM	src/Utility.h	30;"	d
+Monitor	src/Monitor.h	/^Monitor<T>::Monitor() :$/;"	f	class:tbutil::Monitor
+Monitor	src/Monitor.h	/^class Monitor$/;"	c	namespace:tbutil
+MonitorMutexTestThread	test/testthread.cpp	/^   MonitorMutexTestThread( Monitor<Mutex>& m ):$/;"	f	class:MonitorMutexTestThread
+MonitorMutexTestThread	test/testthread.cpp	/^class MonitorMutexTestThread: public Thread$/;"	c	file:
+MonitorMutexTestThread2	test/testthread.cpp	/^    MonitorMutexTestThread2(Monitor<Mutex>&m):$/;"	f	class:MonitorMutexTestThread2
+MonitorMutexTestThread2	test/testthread.cpp	/^class MonitorMutexTestThread2 : public Thread$/;"	c	file:
+MonitorMutexTestThread2Ptr	test/testthread.cpp	/^typedef Handle<MonitorMutexTestThread2> MonitorMutexTestThread2Ptr;$/;"	t	file:
+MonitorMutexTestThreadPtr	test/testthread.cpp	/^typedef Handle<MonitorMutexTestThread> MonitorMutexTestThreadPtr;$/;"	t	file:
+MonitorMutxTest	test/testthread.cpp	/^    MonitorMutxTest() :$/;"	f	class:MonitorMutxTest
+MonitorMutxTest	test/testthread.cpp	/^class MonitorMutxTest : public testBase$/;"	c	file:
+Monotonic	src/Time.h	/^    enum Clock { Realtime, Monotonic };$/;"	e	enum:tbutil::Time::Clock
+Mutex	src/Mutex.cpp	/^Mutex::Mutex()$/;"	f	class:tbutil::Mutex
+Mutex	src/Mutex.h	/^class Mutex$/;"	c	namespace:tbutil
+NO_PRIORITY	src/tbrwlock.h	/^        NO_PRIORITY,$/;"	e	enum:tbsys::ELockMode
+NullHandleException	src/Exception.cpp	/^NullHandleException::NullHandleException(const char* file, int line) :$/;"	f	class:tbutil::NullHandleException
+NullHandleException	src/Exception.h	/^class NullHandleException : public Exception$/;"	c	namespace:tbutil
+OUTPUTPRINT_RETURN	src/PublicDefine.h	88;"	d
+OUTPUT_RETURN	src/PublicDefine.h	77;"	d
+PRINT_BREAK	src/PublicDefine.h	55;"	d
+PRINT_CONTINUE	src/PublicDefine.h	45;"	d
+PRINT_RETURN	src/PublicDefine.h	66;"	d
+PROFILER_BEGIN	src/profiler.h	32;"	d
+PROFILER_DUMP	src/profiler.h	34;"	d
+PROFILER_END	src/profiler.h	33;"	d
+PROFILER_H	src/profiler.h	17;"	d
+PROFILER_SET_STATUS	src/profiler.h	36;"	d
+PROFILER_SET_THRESHOLD	src/profiler.h	35;"	d
+PROFILER_START	src/profiler.h	30;"	d
+PROFILER_STOP	src/profiler.h	31;"	d
+Profiler	src/profiler.cpp	/^	Profiler::Profiler() {$/;"	f	class:tbsys::util::Profiler
+Profiler	src/profiler.h	/^class Profiler$/;"	c	namespace:tbsys::util
+R	src/Functional.h	/^constMemFun(R (T::*p)(void) const)$/;"	f	namespace:tbutil
+READ_PRIORITY	src/tbrwlock.h	/^        READ_PRIORITY$/;"	e	enum:tbsys::ELockMode
+RETURN_ERROR	src/PublicDefine.h	127;"	d
+RETURN_PRINT_ERROR	src/PublicDefine.h	149;"	d
+Realtime	src/Time.h	/^    enum Clock { Realtime, Monotonic };$/;"	e	enum:tbutil::Time::Clock
+RecMutex	src/RecMutex.cpp	/^RecMutex::RecMutex() :$/;"	f	class:tbutil::RecMutex
+RecMutex	src/RecMutex.h	/^class RecMutex$/;"	c	namespace:tbutil
+RecMutexTest	test/testthread.cpp	/^    RecMutexTest():$/;"	f	class:RecMutexTest
+RecMutexTest	test/testthread.cpp	/^class RecMutexTest : public testBase$/;"	c	file:
+RecMutexTestThread	test/testthread.cpp	/^    RecMutexTestThread( RecMutex& m ):$/;"	f	class:RecMutexTestThread
+RecMutexTestThread	test/testthread.cpp	/^class RecMutexTestThread: public Thread$/;"	c	file:
+RecMutexTestThreadPtr	test/testthread.cpp	/^typedef Handle<RecMutexTestThread> RecMutexTestThreadPtr;$/;"	t	file:
+Runnable	src/runnable.h	/^class Runnable {$/;"	c	namespace:tbsys
+SEC2USEC	src/Utility.h	31;"	d
+SHUT_RD	src/Network.h	33;"	d
+SHUT_RDWR	src/Network.h	41;"	d
+SHUT_WR	src/Network.h	37;"	d
+SOCKET	src/Network.h	28;"	d
+SOCKET_ERROR	src/Network.h	29;"	d
+STR_MAP	src/config.h	/^    typedef __gnu_cxx::hash_map<std::string, STR_STR_MAP*, str_hash> STR_MAP;$/;"	t	namespace:tbsys
+STR_MAP_ITER	src/config.h	/^    typedef STR_MAP::iterator STR_MAP_ITER;$/;"	t	namespace:tbsys
+STR_STR_MAP	src/config.h	/^    typedef __gnu_cxx::hash_map<std::string, std::string, str_hash> STR_STR_MAP;$/;"	t	namespace:tbsys
+STR_STR_MAP_ITER	src/config.h	/^    typedef STR_STR_MAP::iterator STR_STR_MAP_ITER;$/;"	t	namespace:tbsys
+S_IRWXUGO	src/fileutil.h	28;"	d
+ScheduleTask	test/testThreadPool.cpp	/^    ScheduleTask()$/;"	f	class:ScheduleTask
+ScheduleTask	test/testThreadPool.cpp	/^class ScheduleTask: public TimerTask$/;"	c	file:
+ScheduleTaskPtr	test/testThreadPool.cpp	/^typedef Handle<ScheduleTask> ScheduleTaskPtr;$/;"	t	file:
+Service	src/Service.cpp	/^Service::Service():$/;"	f	class:tbutil::Service
+Service	src/Service.h	/^class Service$/;"	c	namespace:tbutil
+Shared	src/Shared.cpp	/^Shared::Shared() :$/;"	f	class:tbutil::Shared
+Shared	src/Shared.cpp	/^Shared::Shared(const Shared&) :$/;"	f	class:tbutil::Shared
+Shared	src/Shared.h	/^class Shared$/;"	c	namespace:tbutil
+Short	src/tbsys.h	/^typedef short Short;$/;"	t	namespace:tbutil
+ShortSeq	src/tbsys.h	/^typedef ::std::vector< Short> ShortSeq;$/;"	t	namespace:tbutil
+SimpleShared	src/Shared.cpp	/^SimpleShared::SimpleShared() :$/;"	f	class:tbutil::SimpleShared
+SimpleShared	src/Shared.cpp	/^SimpleShared::SimpleShared(const SimpleShared&) :$/;"	f	class:tbutil::SimpleShared
+SimpleShared	src/Shared.h	/^class SimpleShared$/;"	c	namespace:tbutil
+StaticMutex	src/StaticMutex.h	/^class StaticMutex$/;"	c	namespace:tbutil
+StringSeq	src/tbsys.h	/^typedef ::std::vector< ::std::string> StringSeq;$/;"	t	namespace:tbutil
+SyscallException	src/Exception.cpp	/^SyscallException::SyscallException(const char* file, int line):$/;"	f	class:tbutil::SyscallException
+SyscallException	src/Exception.cpp	/^SyscallException::SyscallException(const char* file, int line, int err ): $/;"	f	class:tbutil::SyscallException
+SyscallException	src/Exception.h	/^class SyscallException : public Exception$/;"	c	namespace:tbutil
+TBFQ_FILE_QUEUE_FLAG	src/filequeue.h	32;"	d
+TBFQ_MAX_FILE_SIZE	src/filequeue.h	30;"	d
+TBFQ_MAX_THREAD_COUNT	src/filequeue.h	31;"	d
+TBSYSEX_THREAD_H	src/TbThread.h	17;"	d
+TBSYS_ATOMIC_H	src/atomic.h	37;"	d
+TBSYS_COND_H	src/Cond.h	17;"	d
+TBSYS_COND_H_	src/threadcond.h	17;"	d
+TBSYS_CONFIG	src/config.h	49;"	d
+TBSYS_CONFIG_H	src/config.h	17;"	d
+TBSYS_CTRL_C_HANDLER_H	src/CtrlCHandler.h	17;"	d
+TBSYS_DEFAULT_RUNNABLE_H_	src/defaultrunnable.h	17;"	d
+TBSYS_EVENTHANDLER_H	src/EventHandler.h	17;"	d
+TBSYS_EXCEPTION_H	src/Exception.h	17;"	d
+TBSYS_FILE_QUEUE_H	src/filequeue.h	17;"	d
+TBSYS_FILE_QUEUE_THREAD_H	src/filequeuethread.h	17;"	d
+TBSYS_FILE_UTIL_H	src/fileutil.h	17;"	d
+TBSYS_FUNCTIONAL_H	src/Functional.h	17;"	d
+TBSYS_H	src/tbsys.h	17;"	d
+TBSYS_HANDLE_H	src/Handle.h	17;"	d
+TBSYS_LOCK_GUARD_H_	src/tblockguard.h	17;"	d
+TBSYS_LOCK_H	src/Lock.h	17;"	d
+TBSYS_LOG	src/tblog.h	43;"	d
+TBSYS_LOGGER	src/tblog.h	40;"	d
+TBSYS_LOG_BASE	src/tblog.h	42;"	d
+TBSYS_LOG_H	src/tblog.h	17;"	d
+TBSYS_LOG_LEVEL	src/tblog.h	38;"	d
+TBSYS_LOG_LEVEL_DEBUG	src/tblog.h	37;"	d
+TBSYS_LOG_LEVEL_ERROR	src/tblog.h	34;"	d
+TBSYS_LOG_LEVEL_INFO	src/tblog.h	36;"	d
+TBSYS_LOG_LEVEL_WARN	src/tblog.h	35;"	d
+TBSYS_LOG_NUM_LEVEL	src/tblog.h	39;"	d
+TBSYS_LOG_US	src/tblog.h	44;"	d
+TBSYS_MEMORY_HPP_	src/Memory.hpp	17;"	d
+TBSYS_MONITOR_H	src/Monitor.h	17;"	d
+TBSYS_MUTEX_H	src/Mutex.h	17;"	d
+TBSYS_MUTEX_H_	src/threadmutex.h	17;"	d
+TBSYS_NETUTIL_H_	src/tbnetutil.h	17;"	d
+TBSYS_NETWORK_H	src/Network.h	17;"	d
+TBSYS_PRINT	src/tblog.h	41;"	d
+TBSYS_PROCESS_H	src/process.h	17;"	d
+TBSYS_PUBLIC_DEFINE_H_	src/PublicDefine.h	17;"	d
+TBSYS_QUEUE_HANDLER_H_	src/iqueuehandler.h	17;"	d
+TBSYS_QUEUE_THREAD_H	src/queuethread.h	17;"	d
+TBSYS_RMUTEX_H	src/RecMutex.h	17;"	d
+TBSYS_RUNNABLE_H_	src/runnable.h	17;"	d
+TBSYS_RW_LOCK_H	src/tbrwlock.h	17;"	d
+TBSYS_SERVICE_H	src/Service.h	17;"	d
+TBSYS_SHARED_H	src/Shared.h	17;"	d
+TBSYS_STATIC_MUTEX_H	src/StaticMutex.h	17;"	d
+TBSYS_STRINGUTIL_H	src/stringutil.h	17;"	d
+TBSYS_THREADEXCEPTION_H	src/ThreadException.h	17;"	d
+TBSYS_THREAD_H_	src/thread.h	17;"	d
+TBSYS_THREAD_POOL_H	src/ThreadPool.h	17;"	d
+TBSYS_TIMER_H	src/Timer.h	17;"	d
+TBSYS_TIMEUTIL_H_	src/tbtimeutil.h	17;"	d
+TBSYS_TIME_H	src/Time.h	17;"	d
+TBSYS_UTILITY_H_	src/Utility.h	17;"	d
+TEST_COMMON_H	test/testCommon.h	17;"	d
+TIME_MAX	src/PublicDefine.h	34;"	d
+TNET_STATIC_MUTEX_INITIALIZER	src/StaticMutex.h	71;"	d
+TNET_TEST_TESTBASE_H	test/testBase.h	17;"	d
+T_INT64	src/tbsys.h	71;"	d
+T_INT64	src/tbsys.h	74;"	d
+T_INT64	src/tbsys.h	77;"	d
+TestTask	test/testTimer.cpp	/^    TestTask() : _count(0)$/;"	f	class:TestTask
+TestTask	test/testTimer.cpp	/^    TestTask(const tbutil::Time& scheduledTime) : $/;"	f	class:TestTask
+TestTask	test/testTimer.cpp	/^class TestTask : public TimerTask, Monitor<Mutex>$/;"	c	file:
+TestTaskPtr	test/testTimer.cpp	/^typedef tbutil::Handle<TestTask> TestTaskPtr;$/;"	t	file:
+TestWorkItems	test/testThreadPool.cpp	/^    TestWorkItems()$/;"	f	class:TestWorkItems
+TestWorkItems	test/testThreadPool.cpp	/^class TestWorkItems : public ThreadPoolWorkItem $/;"	c	file:
+Thread	src/TbThread.cpp	/^Thread::Thread() :$/;"	f	class:tbutil::Thread
+Thread	src/TbThread.h	/^class Thread : virtual public tbutil::Shared$/;"	c	namespace:tbutil
+ThreadCreateException	src/ThreadException.cpp	/^ThreadCreateException::ThreadCreateException(const char* file , int line):$/;"	f	class:tbutil::ThreadCreateException
+ThreadCreateException	src/ThreadException.h	/^class ThreadCreateException: public Exception$/;"	c	namespace:tbutil
+ThreadLocal	src/profiler.h	/^	ThreadLocal () {$/;"	f	class:tbsys::util::ThreadLocal
+ThreadLocal	src/profiler.h	/^class ThreadLocal {$/;"	c	namespace:tbsys::util
+ThreadLockedException	src/ThreadException.cpp	/^ThreadLockedException::ThreadLockedException(const char* file, int line) :$/;"	f	class:tbutil::ThreadLockedException
+ThreadLockedException	src/ThreadException.h	/^class ThreadLockedException : public Exception$/;"	c	namespace:tbutil
+ThreadNotStartedException	src/ThreadException.cpp	/^ThreadNotStartedException::ThreadNotStartedException(const char* file, int line) :$/;"	f	class:tbutil::ThreadNotStartedException
+ThreadNotStartedException	src/ThreadException.h	/^class ThreadNotStartedException : public Exception$/;"	c	namespace:tbutil
+ThreadPool	src/ThreadPool.cpp	/^ThreadPool::ThreadPool(int size , int sizeMax, int sizeWarn,int listSizeMax,int stackSize) :$/;"	f	class:tbutil::ThreadPool
+ThreadPool	src/ThreadPool.h	/^class ThreadPool : public Monitor<Mutex>$/;"	c	namespace:tbutil
+ThreadPoolWorkItem	src/EventHandler.h	/^class ThreadPoolWorkItem $/;"	c	namespace:tbutil
+ThreadPtr	src/TbThread.h	/^typedef tbutil::Handle<Thread> ThreadPtr;$/;"	t	namespace:tbutil
+ThreadStartedException	src/ThreadException.cpp	/^ThreadStartedException::ThreadStartedException(const char* file, int line) :$/;"	f	class:tbutil::ThreadStartedException
+ThreadStartedException	src/ThreadException.h	/^class ThreadStartedException : public Exception$/;"	c	namespace:tbutil
+ThreadSyscallException	src/ThreadException.cpp	/^ThreadSyscallException::ThreadSyscallException(const char* file, int line, int err ): $/;"	f	class:tbutil::ThreadSyscallException
+ThreadSyscallException	src/ThreadException.h	/^class ThreadSyscallException : public SyscallException$/;"	c	namespace:tbutil
+Time	src/Time.cpp	/^Time::Time() :$/;"	f	class:tbutil::Time
+Time	src/Time.cpp	/^Time::Time(Int64 usec) :$/;"	f	class:tbutil::Time
+Time	src/Time.h	/^class Time$/;"	c	namespace:tbutil
+Timer	src/Timer.cpp	/^Timer::Timer() :$/;"	f	class:tbutil::Timer
+Timer	src/Timer.h	/^class Timer :public virtual Shared ,private virtual tbutil::Thread$/;"	c	namespace:tbutil
+TimerPtr	src/Timer.h	/^typedef Handle<Timer> TimerPtr;$/;"	t	namespace:tbutil
+TimerTask	src/Timer.h	/^class TimerTask : virtual public Shared$/;"	c	namespace:tbutil
+TimerTaskCompare	src/Timer.h	/^    class TimerTaskCompare : public std::binary_function<TimerTaskPtr, TimerTaskPtr, bool>$/;"	c	class:tbutil::Timer
+TimerTaskPtr	src/Timer.h	/^typedef Handle<TimerTask> TimerTaskPtr;$/;"	t	namespace:tbutil
+Token	src/Timer.h	/^    struct Token$/;"	s	class:tbutil::Timer
+Token	src/Timer.h	/^Timer::Token::Token(const Time& st, const Time& d, const TimerTaskPtr& t) :$/;"	f	class:tbutil::Timer::Token
+TryLock	src/Monitor.h	/^    typedef TryLockT<Monitor<T> > TryLock;$/;"	t	class:tbutil::Monitor
+TryLock	src/Mutex.h	/^    typedef TryLockT<Mutex> TryLock;$/;"	t	class:tbutil::Mutex
+TryLock	src/RecMutex.h	/^    typedef TryLockT<RecMutex> TryLock;$/;"	t	class:tbutil::RecMutex
+TryLock	src/StaticMutex.h	/^    typedef TryLockT<StaticMutex> TryLock;$/;"	t	class:tbutil::StaticMutex
+TryLockT	src/Lock.h	/^    TryLockT(const T& mutex) :$/;"	f	class:tbutil::TryLockT
+TryLockT	src/Lock.h	/^class TryLockT : public LockT<T>$/;"	c	namespace:tbutil
+UNUSED	src/tbsys.h	31;"	d
+USEC2NSEC	src/Utility.h	32;"	d
+WRITE_PRIORITY	src/tbrwlock.h	/^        WRITE_PRIORITY,$/;"	e	enum:tbsys::ELockMode
+_UUID_Count	test/testnetutil.cpp	/^int _UUID_Count = time(NULL);$/;"	v
+_UUID_HostIp	test/testnetutil.cpp	/^int _UUID_HostIp = 0;$/;"	v
+__DLINK_LIST__	src/linklist.h	17;"	d
+__TBSYS_BYTEBUFFER_H__	src/bytebuffer.h	17;"	d
+__decRef	src/Shared.cpp	/^void Shared::__decRef()$/;"	f	class:tbutil::Shared
+__decRef	src/Shared.h	/^    void __decRef()$/;"	f	class:tbutil::SimpleShared
+__getRef	src/Shared.cpp	/^int Shared::__getRef() const$/;"	f	class:tbutil::Shared
+__getRef	src/Shared.h	/^    int __getRef() const$/;"	f	class:tbutil::SimpleShared
+__incRef	src/Shared.cpp	/^void Shared::__incRef()$/;"	f	class:tbutil::Shared
+__incRef	src/Shared.h	/^    void __incRef()$/;"	f	class:tbutil::SimpleShared
+__setNoDelete	src/Shared.cpp	/^void Shared::__setNoDelete(bool b)$/;"	f	class:tbutil::Shared
+__setNoDelete	src/Shared.h	/^    void __setNoDelete(bool b)$/;"	f	class:tbutil::SimpleShared
+_acquired	src/Lock.h	/^    mutable bool _acquired;$/;"	m	class:tbutil::LockT
+_acquired	src/tblockguard.h	/^        mutable bool _acquired;$/;"	m	class:tbsys::CLockGuard
+_args	src/filequeuethread.h	/^            void *_args;$/;"	m	class:tbsys::CFileQueueThread
+_args	src/queuethread.h	/^            void *_args;$/;"	m	class:tbsys::CQueueThread
+_callback	src/CtrlCHandler.cpp	/^static CtrlCHandlerCallback _callback = 0;$/;"	m	namespace:tbutil	file:
+_changeDir	src/Service.h	/^    bool _changeDir;$/;"	m	class:tbutil::Service
+_check	src/tblog.h	/^    int _check;$/;"	m	class:tbsys::CLogger
+_childCreated	test/testthread.cpp	/^    CondVar& _childCreated;$/;"	m	class:AliveTestThread	file:
+_chlidStop	src/Service.h	/^    bool _chlidStop;$/;"	m	class:tbutil::Service
+_chstdErr	src/Service.h	/^    std::string _chstdErr;$/;"	m	class:tbutil::Service
+_chstdOut	src/Service.h	/^    std::string _chstdOut;$/;"	m	class:tbutil::Service
+_clone	src/CtrlCHandler.cpp	/^Exception* CtrlCHandlerException::_clone() const$/;"	f	class:tbutil::CtrlCHandlerException
+_closeFiles	src/Service.h	/^    bool _closeFiles;$/;"	m	class:tbutil::Service
+_cmd	src/Service.h	/^    std::string _cmd;$/;"	m	class:tbutil::Service
+_cond	src/Cond.h	/^    mutable pthread_cond_t _cond;$/;"	m	class:tbutil::Cond
+_cond	src/Monitor.h	/^    mutable Cond _cond;$/;"	m	class:tbutil::Monitor
+_cond	src/threadcond.h	/^    pthread_cond_t _cond;$/;"	m	class:tbsys::CThreadCond
+_config	src/config.cpp	/^    static CConfig _config;$/;"	m	namespace:tbsys	file:
+_configFile	src/Service.h	/^    std::string _configFile;$/;"	m	class:tbutil::Service
+_count	src/RecMutex.h	/^    mutable int _count;$/;"	m	class:tbutil::RecMutex
+_count	test/testTimer.cpp	/^    int _count;$/;"	m	class:TestTask	file:
+_ctrlCHandler	src/Service.cpp	/^static tbutil::CtrlCHandler* _ctrlCHandler=NULL;$/;"	m	namespace:tbutil	file:
+_destroyed	src/Service.h	/^    bool _destroyed;$/;"	m	class:tbutil::Service
+_destroyed	src/ThreadPool.h	/^    bool _destroyed;$/;"	m	class:tbutil::ThreadPool
+_destroyed	src/Timer.h	/^    bool _destroyed;$/;"	m	class:tbutil::Timer
+_detachable	src/TbThread.h	/^    bool _detachable; \/\/是否全使线程处于分离状态$/;"	m	class:tbutil::Thread
+_done	src/TbThread.cpp	/^void Thread::_done()$/;"	f	class:tbutil::Thread
+_done	test/testthread.cpp	/^    bool _done;$/;"	m	class:CondVar	file:
+_error	src/Exception.h	/^    int _error;$/;"	m	class:tbutil::SyscallException
+_errstr	src/tblog.cpp	/^const char * const CLogger::_errstr[] = {"ERROR","WARN","INFO","DEBUG"};$/;"	m	class:tbsys::CLogger	file:
+_errstr	src/tblog.h	/^    static const char *const _errstr[];   $/;"	m	class:tbsys::CLogger
+_fd	src/tblog.h	/^    int _fd;$/;"	m	class:tbsys::CLogger
+_file	src/Exception.h	/^    const char* _file;$/;"	m	class:tbutil::Exception
+_fileIndexMutex	src/tblog.h	/^    pthread_mutex_t _fileIndexMutex; $/;"	m	class:tbsys::CLogger
+_fileList	src/tblog.h	/^    std::deque<std::string> _fileList;$/;"	m	class:tbsys::CLogger
+_fileSizeMutex	src/tblog.h	/^    pthread_mutex_t _fileSizeMutex;$/;"	m	class:tbsys::CLogger
+_finished	test/testthread.cpp	/^    bool _finished;$/;"	m	class:MonitorMutexTestThread2	file:
+_flag	src/tblog.h	/^    bool _flag;$/;"	m	class:tbsys::CLogger
+_guard	src/tbrwlock.h	/^        CLockGuard<CRLock> _guard;$/;"	m	class:tbsys::CRLockGuard
+_guard	src/tbrwlock.h	/^        CLockGuard<CWLock> _guard;$/;"	m	class:tbsys::CWLockGuard
+_handler	src/CtrlCHandler.cpp	/^static const CtrlCHandler* _handler = 0;$/;"	m	namespace:tbutil	file:
+_handler	src/filequeuethread.h	/^            IQueueHandler *_handler;$/;"	m	class:tbsys::CFileQueueThread
+_handler	src/queuethread.h	/^            IQueueHandler *_handler;$/;"	m	class:tbsys::CQueueThread
+_head	src/linklist.h	/^        NodeT * _head;$/;"	m	class:tbsys::LinkList
+_inUse	src/ThreadPool.h	/^    int _inUse; \/\/ Number of threads that are currently in use.$/;"	m	class:tbutil::ThreadPool
+_instance	src/Service.cpp	/^tbutil::Service* tbutil::Service::_instance=NULL;$/;"	m	class:tbutil::tbutil::Service	file:
+_instance	src/Service.h	/^    static Service* _instance;$/;"	m	class:tbutil::Service
+_level	src/tblog.h	/^    int _level;$/;"	m	class:tbsys::CLogger
+_line	src/Exception.h	/^    int _line;$/;"	m	class:tbutil::Exception
+_listSize	src/ThreadPool.h	/^    int _listSize;$/;"	m	class:tbutil::ThreadPool
+_listSizeMax	src/ThreadPool.h	/^    const int _listSizeMax;$/;"	m	class:tbutil::ThreadPool
+_load	src/ThreadPool.h	/^    double _load; \/\/ Current load in number of threads.$/;"	m	class:tbutil::ThreadPool
+_lock	src/tblockguard.h	/^        const T& _lock;$/;"	m	class:tbsys::CLockGuard
+_logger	src/tblog.cpp	/^CLogger CLogger::_logger;$/;"	m	class:tbsys::CLogger	file:
+_logger	src/tblog.h	/^    static CLogger _logger;$/;"	m	class:tbsys::CLogger
+_maxFileIndex	src/tblog.h	/^    size_t _maxFileIndex;$/;"	m	class:tbsys::CLogger
+_maxFileSize	src/tblog.h	/^    int64_t _maxFileSize;$/;"	m	class:tbsys::CLogger
+_mfn	src/Functional.h	/^    MemberFN _mfn;$/;"	m	class:tbutil::ConstMemFun
+_monitor	src/Service.h	/^    tbutil::Monitor<tbutil::Mutex> _monitor;$/;"	m	class:tbutil::Service
+_monitor	src/ThreadPool.h	/^    Monitor<Mutex> _monitor; $/;"	m	class:tbutil::ThreadPool
+_monitor	src/Timer.h	/^    Monitor<Mutex> _monitor;$/;"	m	class:tbutil::Timer
+_monitor	test/testThreadPool.cpp	/^Monitor<Mutex> _monitor;$/;"	v
+_monitor	test/testthread.cpp	/^    Monitor<Mutex>& _monitor;$/;"	m	class:MonitorMutexTestThread2	file:
+_monitor	test/testthread.cpp	/^   Monitor<Mutex>& _monitor;$/;"	m	class:MonitorMutexTestThread	file:
+_mutex	src/Lock.h	/^    const T& _mutex;$/;"	m	class:tbutil::LockT
+_mutex	src/Monitor.h	/^    T _mutex;$/;"	m	class:tbutil::Monitor
+_mutex	src/Mutex.h	/^    mutable pthread_mutex_t _mutex;$/;"	m	class:tbutil::Mutex
+_mutex	src/RecMutex.h	/^    mutable pthread_mutex_t _mutex;$/;"	m	class:tbutil::RecMutex
+_mutex	src/Shared.h	/^    Mutex _mutex;$/;"	m	class:tbutil::Shared
+_mutex	src/StaticMutex.h	/^    mutable pthread_mutex_t _mutex;$/;"	m	class:tbutil::StaticMutex
+_mutex	src/TbThread.h	/^    tbutil::Mutex _mutex;     \/\/线程运行标志锁$/;"	m	class:tbutil::Thread
+_mutex	src/filequeuethread.h	/^            CThreadCond _mutex;$/;"	m	class:tbsys::CFileQueueThread
+_mutex	src/queuethread.h	/^            CThreadCond _mutex;$/;"	m	class:tbsys::CQueueThread
+_mutex	src/threadmutex.h	/^    CThreadMutex *_mutex;$/;"	m	class:tbsys::CThreadGuard
+_mutex	src/threadmutex.h	/^    pthread_mutex_t _mutex;$/;"	m	class:tbsys::CThreadMutex
+_mutex	test/testthread.cpp	/^    RecMutex& _mutex;$/;"	m	class:RecMutexTestThread	file:
+_name	src/CtrlCHandler.cpp	/^string CtrlCHandlerException::_name() const$/;"	f	class:tbutil::CtrlCHandlerException
+_name	src/Exception.cpp	/^const char* Exception::_name = "tbutil::Exception";$/;"	m	class:tbutil::Exception	file:
+_name	src/Exception.cpp	/^const char* IllegalArgumentException::_name = "IllegalArgumentException";$/;"	m	class:tbutil::IllegalArgumentException	file:
+_name	src/Exception.cpp	/^const char* NullHandleException::_name = "NullHandleException";$/;"	m	class:tbutil::NullHandleException	file:
+_name	src/Exception.cpp	/^const char* SyscallException::_name = "SyscallException";$/;"	m	class:tbutil::SyscallException	file:
+_name	src/Exception.h	/^    static const char* _name;$/;"	m	class:tbutil::Exception
+_name	src/Exception.h	/^    static const char* _name;$/;"	m	class:tbutil::IllegalArgumentException
+_name	src/Exception.h	/^    static const char* _name;$/;"	m	class:tbutil::NullHandleException
+_name	src/Exception.h	/^    static const char* _name;$/;"	m	class:tbutil::SyscallException
+_name	src/ThreadException.cpp	/^const char* tbutil::BadThreadControlException::_name = "::BadThreadControlException";$/;"	m	class:tbutil::tbutil::BadThreadControlException	file:
+_name	src/ThreadException.cpp	/^const char* tbutil::InvalidTimeoutException::_name = "::InvalidTimeoutException";$/;"	m	class:tbutil::tbutil::InvalidTimeoutException	file:
+_name	src/ThreadException.cpp	/^const char* tbutil::ThreadCreateException::_name="::ThreadCreateException";$/;"	m	class:tbutil::tbutil::ThreadCreateException	file:
+_name	src/ThreadException.cpp	/^const char* tbutil::ThreadLockedException::_name = "::ThreadLockedException";$/;"	m	class:tbutil::tbutil::ThreadLockedException	file:
+_name	src/ThreadException.cpp	/^const char* tbutil::ThreadNotStartedException::_name = "::ThreadNotStartedException";$/;"	m	class:tbutil::tbutil::ThreadNotStartedException	file:
+_name	src/ThreadException.cpp	/^const char* tbutil::ThreadStartedException::_name = "::ThreadStartedException";$/;"	m	class:tbutil::tbutil::ThreadStartedException	file:
+_name	src/ThreadException.cpp	/^const char* tbutil::ThreadSyscallException::_name = "::ThreadSyscallException";$/;"	m	class:tbutil::tbutil::ThreadSyscallException	file:
+_name	src/ThreadException.h	/^      static const char* _name;$/;"	m	class:tbutil::ThreadCreateException
+_name	src/ThreadException.h	/^    static const char* _name;$/;"	m	class:tbutil::BadThreadControlException
+_name	src/ThreadException.h	/^    static const char* _name;$/;"	m	class:tbutil::InvalidTimeoutException
+_name	src/ThreadException.h	/^    static const char* _name;$/;"	m	class:tbutil::ThreadLockedException
+_name	src/ThreadException.h	/^    static const char* _name;$/;"	m	class:tbutil::ThreadNotStartedException
+_name	src/ThreadException.h	/^    static const char* _name;$/;"	m	class:tbutil::ThreadStartedException
+_name	src/ThreadException.h	/^    static const char* _name;$/;"	m	class:tbutil::ThreadSyscallException
+_name	src/tblog.h	/^    char *_name;$/;"	m	class:tbsys::CLogger
+_name	test/testBase.h	/^     const std::string _name;$/;"	m	class:testFailed
+_name	test/testBase.h	/^    const std::string _name;    $/;"	m	class:testBase
+_nnotify	src/Monitor.h	/^    mutable int _nnotify;$/;"	m	class:tbutil::Monitor
+_noDelete	src/Shared.h	/^    bool _noDelete;$/;"	m	class:tbutil::Shared
+_noDelete	src/Shared.h	/^    bool _noDelete;$/;"	m	class:tbutil::SimpleShared
+_nohup	src/Service.h	/^    bool _nohup;$/;"	m	class:tbutil::Service
+_noinit	src/Service.h	/^    std::string _noinit;$/;"	m	class:tbutil::Service
+_parentReady	test/testthread.cpp	/^    CondVar& _parentReady;$/;"	m	class:AliveTestThread	file:
+_pidFile	src/Service.h	/^    std::string _pidFile;$/;"	m	class:tbutil::Service
+_pool	src/ThreadPool.h	/^        ThreadPool* _pool;$/;"	m	class:tbutil::ThreadPool::EventHandlerThread
+_procSize	src/ThreadPool.h	/^    int _procSize;$/;"	m	class:tbutil::ThreadPool
+_promote	src/ThreadPool.h	/^    bool _promote;$/;"	m	class:tbutil::ThreadPool
+_ptr	src/Handle.h	/^    T* _ptr;$/;"	m	class:tbutil::HandleBase
+_queue	src/filequeuethread.h	/^            CFileQueue *_queue;$/;"	m	class:tbsys::CFileQueueThread
+_queue	src/queuethread.h	/^            std::queue<data_pair*> _queue;            $/;"	m	class:tbsys::CQueueThread
+_reason	src/Exception.h	/^    std::string _reason;$/;"	m	class:tbutil::IllegalArgumentException
+_ref	src/Shared.h	/^    int _ref;$/;"	m	class:tbutil::Shared
+_ref	src/Shared.h	/^    int _ref;$/;"	m	class:tbutil::SimpleShared
+_rlock	src/tbrwlock.h	/^        CRLock* _rlock;$/;"	m	class:tbsys::CRWLock
+_rlock	src/tbrwlock.h	/^        mutable pthread_rwlock_t* _rlock;$/;"	m	class:tbsys::CRLock
+_run	test/testTimer.cpp	/^    bool _run;$/;"	m	class:DestroyTask	file:
+_run	test/testTimer.cpp	/^    tbutil::Time _run;$/;"	m	class:TestTask	file:
+_running	src/TbThread.h	/^    bool  _running;   \/\/线程运行标志$/;"	m	class:tbutil::Thread
+_running	src/ThreadPool.h	/^    int _running; \/\/ Number of running threads.$/;"	m	class:tbutil::ThreadPool
+_rwlock	src/tbrwlock.h	/^        pthread_rwlock_t _rwlock;$/;"	m	class:tbsys::CRWLock
+_rwlock	src/tbrwlock.h	/^        pthread_rwlock_t _rwlock;$/;"	m	class:tbsys::CRWSimpleLock
+_scheduledTime	test/testTimer.cpp	/^    tbutil::Time _scheduledTime;$/;"	m	class:TestTask	file:
+_service	src/Service.h	/^    bool _service;$/;"	m	class:tbutil::Service
+_size	src/ThreadPool.h	/^    const int _size; \/\/ Number of threads that are pre-created.$/;"	m	class:tbutil::ThreadPool
+_sizeMax	src/ThreadPool.h	/^    const int _sizeMax; \/\/ Maximum number of threads.$/;"	m	class:tbutil::ThreadPool
+_sizeWarn	src/ThreadPool.h	/^    const int _sizeWarn; \/\/ If _inUse reaches _sizeWarn, a "low on threads" warning will be printed.$/;"	m	class:tbutil::ThreadPool
+_stackSize	src/ThreadPool.h	/^    const size_t _stackSize;$/;"	m	class:tbutil::ThreadPool
+_started	src/TbThread.h	/^    bool _started;    \/\/线程是否处于开始状态$/;"	m	class:tbutil::Thread
+_stop	src/defaultrunnable.h	/^    bool _stop;$/;"	m	class:tbsys::CDefaultRunnable
+_str	src/Exception.h	/^    mutable ::std::string _str; $/;"	m	class:tbutil::Exception
+_tail	src/linklist.h	/^        NodeT * _tail;$/;"	m	class:tbsys::LinkList
+_tasks	src/Timer.h	/^    std::map<TimerTaskPtr, Time, TimerTaskCompare> _tasks;$/;"	m	class:tbutil::Timer
+_thread	src/TbThread.h	/^    pthread_t _thread;\/\/线程ID$/;"	m	class:tbutil::Thread
+_thread	src/defaultrunnable.h	/^    CThread *_thread;$/;"	m	class:tbsys::CDefaultRunnable
+_threadCount	src/defaultrunnable.h	/^    int _threadCount;$/;"	m	class:tbsys::CDefaultRunnable
+_threads	src/ThreadPool.h	/^    std::vector<tbutil::ThreadPtr> _threads; \/\/ All threads, running or not.$/;"	m	class:tbutil::ThreadPool
+_throw	src/CtrlCHandler.cpp	/^void CtrlCHandlerException::_throw() const$/;"	f	class:tbutil::CtrlCHandlerException
+_throw	src/Exception.cpp	/^void Exception::_throw() const$/;"	f	class:tbutil::Exception
+_throw	src/Exception.cpp	/^void IllegalArgumentException::_throw() const$/;"	f	class:tbutil::IllegalArgumentException
+_throw	src/Exception.cpp	/^void NullHandleException::_throw() const$/;"	f	class:tbutil::NullHandleException
+_throw	src/Exception.cpp	/^void SyscallException::_throw() const$/;"	f	class:tbutil::SyscallException
+_throw	src/ThreadException.cpp	/^void BadThreadControlException::_throw() const$/;"	f	class:tbutil::BadThreadControlException
+_throw	src/ThreadException.cpp	/^void InvalidTimeoutException::_throw() const$/;"	f	class:tbutil::InvalidTimeoutException
+_throw	src/ThreadException.cpp	/^void ThreadCreateException::_throw() const$/;"	f	class:tbutil::ThreadCreateException
+_throw	src/ThreadException.cpp	/^void ThreadLockedException::_throw() const$/;"	f	class:tbutil::ThreadLockedException
+_throw	src/ThreadException.cpp	/^void ThreadNotStartedException::_throw() const$/;"	f	class:tbutil::ThreadNotStartedException
+_throw	src/ThreadException.cpp	/^void ThreadStartedException::_throw() const$/;"	f	class:tbutil::ThreadStartedException
+_throw	src/ThreadException.cpp	/^void ThreadSyscallException::_throw() const$/;"	f	class:tbutil::ThreadSyscallException
+_tid	src/CtrlCHandler.cpp	/^static pthread_t _tid;$/;"	m	namespace:tbutil	file:
+_timeout	src/ThreadException.h	/^    Time _timeout;$/;"	m	class:tbutil::InvalidTimeoutException
+_timer	test/testTimer.cpp	/^    TimerPtr _timer;$/;"	m	class:DestroyTask	file:
+_tokens	src/Timer.h	/^    std::set<Token> _tokens;$/;"	m	class:tbutil::Timer
+_tryLock	test/testthread.cpp	/^    bool _tryLock;$/;"	m	class:RecMutexTestThread	file:
+_tryLock	test/testthread.cpp	/^   bool _tryLock;$/;"	m	class:MonitorMutexTestThread	file:
+_tryLockCond	test/testthread.cpp	/^    Cond _tryLockCond;$/;"	m	class:RecMutexTestThread	file:
+_tryLockCond	test/testthread.cpp	/^   Cond _tryLockCond;$/;"	m	class:MonitorMutexTestThread	file:
+_tryLockMutex	test/testthread.cpp	/^    Mutex _tryLockMutex;$/;"	m	class:RecMutexTestThread	file:
+_tryLockMutex	test/testthread.cpp	/^   Mutex _tryLockMutex;$/;"	m	class:MonitorMutexTestThread	file:
+_usec	src/Time.h	/^    Int64 _usec;$/;"	m	class:tbutil::Time
+_waitingNumber	src/ThreadPool.h	/^    volatile int _waitingNumber;$/;"	m	class:tbutil::ThreadPool
+_wakeUpTime	src/Timer.h	/^    Time _wakeUpTime;$/;"	m	class:tbutil::Timer
+_wlock	src/tbrwlock.h	/^        CWLock* _wlock;$/;"	m	class:tbsys::CRWLock
+_wlock	src/tbrwlock.h	/^        mutable pthread_rwlock_t* _wlock;$/;"	m	class:tbsys::CWLock
+_workItems	src/ThreadPool.h	/^    std::list<ThreadPoolWorkItem*> _workItems;$/;"	m	class:tbutil::ThreadPool
+acquire	src/Lock.h	/^    void acquire() const$/;"	f	class:tbutil::LockT
+acquired	src/Lock.h	/^    bool acquired() const$/;"	f	class:tbutil::LockT
+acquired	src/tblockguard.h	/^        bool acquired() const$/;"	f	class:tbsys::CLockGuard
+acquired	src/tbrwlock.h	/^        bool acquired()$/;"	f	class:tbsys::CRLockGuard
+acquired	src/tbrwlock.h	/^        bool acquired()$/;"	f	class:tbsys::CWLockGuard
+addrToString	src/tbnetutil.cpp	/^string CNetUtil::addrToString(uint64_t ipport)$/;"	f	class:tbsys::CNetUtil
+allocate	src/bytebuffer.cpp	/^char* ByteBuffer::allocate(uint32_t size) const$/;"	f	class:ByteBuffer
+append	src/linklist.h	/^void LinkList<NodeT>::append(NodeT* node)$/;"	f	class:tbsys::LinkList
+args	src/thread.h	/^    void *args;$/;"	m	class:tbsys::CThread
+assign	src/bytebuffer.cpp	/^ByteBuffer & ByteBuffer::assign(const char* data, uint32_t offset, uint32_t size)$/;"	f	class:ByteBuffer
+atomic_add	src/atomic.h	/^static __inline__ void atomic_add(int i, atomic_t *v)$/;"	f
+atomic_add_negative	src/atomic.h	/^static __inline__ int atomic_add_negative(int i, atomic_t *v)$/;"	f
+atomic_add_return	src/atomic.h	/^static __inline__ int atomic_add_return(int i, atomic_t *v)$/;"	f
+atomic_clear_mask	src/atomic.h	235;"	d
+atomic_dec	src/atomic.h	/^static __inline__ void atomic_dec(atomic_t *v)$/;"	f
+atomic_dec_and_test	src/atomic.h	/^static __inline__ int atomic_dec_and_test(atomic_t *v)$/;"	f
+atomic_dec_return	src/atomic.h	244;"	d
+atomic_inc	src/atomic.h	/^static __inline__ void atomic_inc(atomic_t *v)$/;"	f
+atomic_inc_and_test	src/atomic.h	/^static __inline__ int atomic_inc_and_test(atomic_t *v)$/;"	f
+atomic_inc_return	src/atomic.h	243;"	d
+atomic_read	src/atomic.h	61;"	d
+atomic_set	src/atomic.h	70;"	d
+atomic_set_mask	src/atomic.h	239;"	d
+atomic_sub	src/atomic.h	/^static __inline__ void atomic_sub(int i, atomic_t *v)$/;"	f
+atomic_sub_and_test	src/atomic.h	/^static __inline__ int atomic_sub_and_test(int i, atomic_t *v)$/;"	f
+atomic_sub_return	src/atomic.h	/^static __inline__ int atomic_sub_return(int i, atomic_t *v)$/;"	f
+atomic_t	src/atomic.h	/^typedef struct { volatile int counter; } atomic_t;$/;"	t	typeref:struct:__anon1
+backup	src/filequeue.cpp	/^    void CFileQueue::backup(uint32_t index) {$/;"	f	class:tbsys::CFileQueue
+begin	src/profiler.cpp	/^	void Profiler::begin(const string& description) {$/;"	f	class:tbsys::util::Profiler
+broadcast	src/Cond.cpp	/^void Cond::broadcast()$/;"	f	class:tbutil::Cond
+broadcast	src/threadcond.h	/^    void broadcast() {$/;"	f	class:tbsys::CThreadCond
+btime	src/profiler.h	/^	uint64_t btime;$/;"	m	class:tbsys::util::Entry
+cancel	src/Timer.cpp	/^bool Timer::cancel(const TimerTaskPtr& task)$/;"	f	class:tbutil::Timer
+char_equal	src/config.h	/^    struct char_equal {$/;"	s	namespace:tbsys
+checkCreateDir	src/Utility.cpp	/^int checkCreateDir(const char *pszPath)$/;"	f	namespace:tbsys
+checkCreateLink	src/Utility.cpp	/^int checkCreateLink(const char *pszPath, const char *pszLink, int iRecreate)$/;"	f	namespace:tbsys
+checkFile	src/tblog.cpp	/^void CLogger::checkFile()$/;"	f	class:tbsys::CLogger
+clear	src/filequeue.cpp	/^    int CFileQueue::clear()$/;"	f	class:tbsys::CFileQueue
+clear	test/testTimer.cpp	/^    clear()$/;"	f	class:TestTask
+clone	src/Exception.cpp	/^Exception* Exception::clone() const$/;"	f	class:tbutil::Exception
+clone	src/Exception.cpp	/^Exception* IllegalArgumentException::clone() const$/;"	f	class:tbutil::IllegalArgumentException
+clone	src/Exception.cpp	/^Exception* NullHandleException::clone() const$/;"	f	class:tbutil::NullHandleException
+clone	src/Exception.cpp	/^Exception* SyscallException::clone() const$/;"	f	class:tbutil::SyscallException
+clone	src/ThreadException.cpp	/^Exception* BadThreadControlException::clone() const$/;"	f	class:tbutil::BadThreadControlException
+clone	src/ThreadException.cpp	/^Exception* InvalidTimeoutException::clone() const$/;"	f	class:tbutil::InvalidTimeoutException
+clone	src/ThreadException.cpp	/^Exception* ThreadCreateException::clone() const$/;"	f	class:tbutil::ThreadCreateException
+clone	src/ThreadException.cpp	/^Exception* ThreadLockedException::clone() const$/;"	f	class:tbutil::ThreadLockedException
+clone	src/ThreadException.cpp	/^Exception* ThreadNotStartedException::clone() const$/;"	f	class:tbutil::ThreadNotStartedException
+clone	src/ThreadException.cpp	/^Exception* ThreadStartedException::clone() const$/;"	f	class:tbutil::ThreadStartedException
+clone	src/ThreadException.cpp	/^Exception* ThreadSyscallException::clone() const$/;"	f	class:tbutil::ThreadSyscallException
+closeSocketNoThrow	src/Network.cpp	/^int closeSocketNoThrow( SOCKET fd )$/;"	f	namespace:tbutilInternal
+combine	src/linklist.h	/^void LinkList<NodeT>::combine(const LinkList<NodeT>& al)$/;"	f	class:tbsys::LinkList
+configureDaemon	src/Service.cpp	/^void Service::configureDaemon(bool changeDir , bool closeFile)$/;"	f	class:tbutil::Service
+copy	src/bytebuffer.cpp	/^ByteBuffer & ByteBuffer::copy(const char* data, uint32_t offset, uint32_t size)$/;"	f	class:ByteBuffer
+count	src/RecMutex.h	/^        int count;$/;"	m	struct:tbutil::RecMutex::LockState
+counter	src/atomic.h	/^typedef struct { volatile int counter; } atomic_t;$/;"	m	struct:__anon1
+createPipe	src/Network.cpp	/^int createPipe(SOCKET fds[2])$/;"	f	namespace:tbutilInternal
+ctrlCHandlerCallback	src/Service.cpp	/^static void ctrlCHandlerCallback( int sig )$/;"	f	namespace:tbutil
+ctrlCHandlerName	src/CtrlCHandler.cpp	/^static const char* ctrlCHandlerName = "tbutil::CtrlCHandlerException";$/;"	m	namespace:tbutil	file:
+data	src/filequeue.h	/^        char data[0];$/;"	m	struct:tbsys::queue_item
+data	src/queuethread.h	/^                char *data;$/;"	m	struct:tbsys::CQueueThread::data_pair
+data_	src/bytebuffer.h	/^            char* data_;$/;"	m	class:tbutil::ByteBuffer
+data_pair	src/queuethread.h	/^            typedef struct data_pair {$/;"	s	class:tbsys::CQueueThread
+data_pair	src/queuethread.h	/^            } data_pair;$/;"	t	class:tbsys::CQueueThread	typeref:struct:tbsys::CQueueThread::data_pair
+delay	src/Timer.h	/^        Time delay;$/;"	m	struct:tbutil::Timer::Token
+deleteReadFile	src/filequeue.cpp	/^    int CFileQueue::deleteReadFile()$/;"	f	class:tbsys::CFileQueue
+destroy	src/ThreadPool.cpp	/^void ThreadPool::destroy()$/;"	f	class:tbutil::ThreadPool
+destroy	src/Timer.cpp	/^void Timer::destroy()$/;"	f	class:tbutil::Timer
+destroy	test/testService.cpp	/^    virtual bool destroy()$/;"	f	class:testService
+destroy	test/testThreadPool.cpp	/^    virtual void destroy( )$/;"	f	class:TestWorkItems
+detach	src/TbThread.cpp	/^int Thread::detach()$/;"	f	class:tbutil::Thread
+disableInterrupt	src/Service.cpp	/^void Service::disableInterrupt()$/;"	f	class:tbutil::Service
+doSubEntry	src/profiler.h	/^	void doSubEntry(const std::string& message) {$/;"	f	class:tbsys::util::Entry
+dump	src/profiler.cpp	/^	void Profiler::dump() {$/;"	f	class:tbsys::util::Profiler
+dynamicCast	src/Handle.h	/^    static Handle dynamicCast(Y* p)$/;"	f	class:tbutil::Handle
+dynamicCast	src/Handle.h	/^    static Handle dynamicCast(const HandleBase<Y>& r)$/;"	f	class:tbutil::Handle
+element_type	src/Handle.h	/^    typedef T element_type;$/;"	t	class:tbutil::HandleBase
+empty	src/linklist.h	/^        bool empty() const { return !(_head && _tail); }$/;"	f	class:tbsys::LinkList
+enableInterrupt	src/Service.cpp	/^void Service::enableInterrupt()$/;"	f	class:tbutil::Service
+end	src/profiler.cpp	/^	void Profiler::end() {$/;"	f	class:tbsys::util::Profiler
+entry	src/profiler.h	/^	ThreadLocal<Entry*> entry;$/;"	m	class:tbsys::util::Profiler
+errmsg_	src/bytebuffer.h	/^                    char errmsg_[MAX_ERROR_MSG_LEN];$/;"	m	class:tbutil::ByteBuffer::out_of_range
+error	src/Exception.cpp	/^int SyscallException::error() $/;"	f	class:tbutil::SyscallException
+etime	src/profiler.h	/^	uint64_t etime;$/;"	m	class:tbsys::util::Entry
+execute	src/ThreadPool.cpp	/^int ThreadPool::execute(ThreadPoolWorkItem* workItem)$/;"	f	class:tbutil::ThreadPool
+execute	test/testThreadPool.cpp	/^    virtual void execute( const ThreadPool* )$/;"	f	class:TestWorkItems
+existPid	src/process.cpp	/^    int CProcess::existPid(const char *szPidFile)$/;"	f	class:tbsys::CProcess
+exit_status	src/filequeue.h	/^        int exit_status;        \/\/ 退出状态$/;"	m	struct:tbsys::qinfo_head
+file	src/Exception.cpp	/^const char* Exception::file() const$/;"	f	class:tbutil::Exception
+finish	src/filequeue.cpp	/^    void CFileQueue::finish(uint32_t index) {$/;"	f	class:tbsys::CFileQueue
+first	src/profiler.h	/^	Entry *first;$/;"	m	class:tbsys::util::Entry
+flag	src/filequeue.h	/^        int flag;$/;"	m	struct:tbsys::queue_item
+formatByteSize	src/stringutil.cpp	/^    std::string CStringUtil::formatByteSize(double bytes)$/;"	f	class:tbsys::CStringUtil
+free	src/bytebuffer.cpp	/^void  ByteBuffer::free()$/;"	f	class:ByteBuffer
+gConstruct	src/Memory.hpp	/^template <typename Type> inline Type *gConstruct(void *p)$/;"	f	namespace:tbsys
+gCount	test/testThreadPool.cpp	/^static int64_t gCount;$/;"	v	file:
+gDelete	src/Memory.hpp	/^template <typename Type> inline void gDelete(Type *&rp)$/;"	f	namespace:tbsys
+gDeleteA	src/Memory.hpp	/^template <typename Type> inline void gDeleteA(Type *&rp)$/;"	f	namespace:tbsys
+gDestruct	src/Memory.hpp	/^template <typename Type> inline void gDestruct(Type *p)$/;"	f	namespace:tbsys
+gFree	src/Memory.hpp	/^template <typename Type> inline void gFree(Type *&rp)$/;"	f	namespace:tbsys
+gNew	src/Memory.hpp	/^template <typename Type> inline Type *gNew()$/;"	f	namespace:tbsys
+gNewA	src/Memory.hpp	/^template <typename Type> inline Type *gNewA(unsigned uiItemNum)$/;"	f	namespace:tbsys
+gNow	test/testThreadPool.cpp	/^tbutil::Time gNow;$/;"	v
+gStart	test/testThreadPool.cpp	/^tbutil::Time gStart;$/;"	v
+get	src/Handle.h	/^    T* get() const$/;"	f	class:tbutil::HandleBase
+get	src/bytebuffer.cpp	/^ByteBuffer & ByteBuffer::get(char* dst, $/;"	f	class:ByteBuffer
+get	src/bytebuffer.cpp	/^ByteBuffer & ByteBuffer::get(int index, char* dst, $/;"	f	class:ByteBuffer
+get	src/bytebuffer.h	/^            ByteBuffer & get(std::string & e) throw (out_of_range) { return getString(e); }$/;"	f	class:tbutil::ByteBuffer
+get	src/bytebuffer.h	/^        ByteBuffer & ByteBuffer::get(T & e) $/;"	f	class:tbutil::ByteBuffer
+get	src/bytebuffer.h	/^        ByteBuffer & ByteBuffer::get(std::vector<T> & v) $/;"	f	class:tbutil::ByteBuffer
+get	src/bytebuffer.h	/^        T ByteBuffer::get() $/;"	f	class:tbutil::ByteBuffer
+get	src/profiler.h	/^	T get() { return (T)pthread_getspecific(key); }$/;"	f	class:tbsys::util::ThreadLocal
+getAbsPath	src/Utility.cpp	/^int getAbsPath(const char *pszPath, char *pszBuf, int iBufLen)$/;"	f	namespace:tbsys
+getAddr	src/tbnetutil.cpp	/^uint32_t CNetUtil::getAddr(const char *ip)$/;"	f	class:tbsys::CNetUtil
+getArgs	src/thread.h	/^    void *getArgs() {$/;"	f	class:tbsys::CThread
+getCConfig	src/config.cpp	/^    CConfig& CConfig::getCConfig()$/;"	f	class:tbsys::CConfig
+getCallback	src/CtrlCHandler.cpp	/^CtrlCHandler::getCallback() const$/;"	f	class:tbutil::CtrlCHandler
+getCount	test/testTimer.cpp	/^    getCount() const$/;"	f	class:TestTask
+getCurrentEntry	src/profiler.cpp	/^	Entry *Profiler::getCurrentEntry() {$/;"	f	class:tbsys::util::Profiler
+getDuration	src/profiler.cpp	/^	long Profiler::getDuration() {$/;"	f	class:tbsys::util::Profiler
+getDuration	src/profiler.h	/^	long getDuration() {$/;"	f	class:tbsys::util::Entry
+getEndTime	src/profiler.h	/^	long getEndTime() {$/;"	f	class:tbsys::util::Entry
+getExe	src/Utility.cpp	/^int getExe(char *pszExe, unsigned uiExeLen)$/;"	f	namespace:tbsys
+getExeRoot	src/Utility.cpp	/^int getExeRoot(char *pszExeRoot, unsigned uiExePathLen)$/;"	f	namespace:tbsys
+getFutureAbsTS	src/Utility.h	/^static inline int getFutureAbsTS(struct timespec *pts, unsigned uiUSec)$/;"	f
+getHostIP	src/Utility.cpp	/^int getHostIP(char *pszAddr, unsigned uiAddrLen)$/;"	f	namespace:tbsys
+getInt	src/config.cpp	/^    int CConfig::getInt(const char *section, const string& key, int d)$/;"	f	class:tbsys::CConfig
+getIntList	src/config.cpp	/^    vector<int> CConfig::getIntList(const char *section, const string& key) {$/;"	f	class:tbsys::CConfig
+getLocalAddr	src/tbnetutil.cpp	/^uint32_t CNetUtil::getLocalAddr(const char *dev_name)$/;"	f	class:tbsys::CNetUtil
+getMonotonicTime	src/tbtimeutil.cpp	/^int64_t CTimeUtil::getMonotonicTime() {$/;"	f	class:tbsys::CTimeUtil
+getMyDuration	src/profiler.h	/^	long getMyDuration() {$/;"	f	class:tbsys::util::Entry
+getPercentage	src/profiler.h	/^	double getPercentage() {$/;"	f	class:tbsys::util::Entry
+getPercentageOfTotal	src/profiler.h	/^	double getPercentageOfTotal() {$/;"	f	class:tbsys::util::Entry
+getPrimeHash	src/stringutil.cpp	/^    int CStringUtil::getPrimeHash(const char *str)$/;"	f	class:tbsys::CStringUtil
+getRef	src/bytebuffer.cpp	/^ByteBuffer & ByteBuffer::getRef(int index, const char* &dst, $/;"	f	class:ByteBuffer
+getRef	src/bytebuffer.h	/^        ByteBuffer & ByteBuffer::getRef(int index, T* &dst) $/;"	f	class:tbutil::ByteBuffer
+getRef	src/bytebuffer.h	/^        ByteBuffer & ByteBuffer::getRef(int index, const T* &dst) $/;"	f	class:tbutil::ByteBuffer
+getRunTime	test/testTimer.cpp	/^    getRunTime() const$/;"	f	class:TestTask
+getRunnable	src/thread.h	/^    Runnable *getRunnable() {$/;"	f	class:tbsys::CThread
+getScheduledTime	test/testTimer.cpp	/^    getScheduledTime() const$/;"	f	class:TestTask
+getSectionKey	src/config.cpp	/^    int CConfig::getSectionKey(const char *section, vector<string> &keys)$/;"	f	class:tbsys::CConfig
+getSectionName	src/config.cpp	/^    int CConfig::getSectionName(vector<string> &sections)$/;"	f	class:tbsys::CConfig
+getStartTime	src/profiler.h	/^	long getStartTime() {$/;"	f	class:tbsys::util::Entry
+getString	src/bytebuffer.cpp	/^ByteBuffer & ByteBuffer::getString(std::string & v) throw (ByteBuffer::out_of_range)$/;"	f	class:ByteBuffer
+getString	src/config.cpp	/^    const char *CConfig::getString(const char *section, const string& key, const char *d)$/;"	f	class:tbsys::CConfig
+getStringList	src/config.cpp	/^    vector<const char*> CConfig::getStringList(const char *section, const string& key) {$/;"	f	class:tbsys::CConfig
+getSystemErrno	src/tbsys.h	/^inline int getSystemErrno()$/;"	f	namespace:tbutil
+getTime	src/profiler.h	/^	static uint64_t getTime() {$/;"	f	class:tbsys::util::Entry
+getTime	src/tbtimeutil.cpp	/^int64_t CTimeUtil::getTime() {$/;"	f	class:tbsys::CTimeUtil
+getUnreleasedEntry	src/profiler.h	/^	Entry *getUnreleasedEntry() {$/;"	f	class:tbsys::util::Entry
+get_cur_tv	src/tblog.h	/^    static inline struct timeval get_cur_tv()$/;"	f	class:tbsys::CLogger
+getpid	src/thread.h	/^    int getpid() {$/;"	f	class:tbsys::CThread
+globalMutex	src/StaticMutex.cpp	/^tbutil::StaticMutex tbutil::globalMutex = TNET_STATIC_MUTEX_INITIALIZER;$/;"	m	class:tbutil	file:
+guint32p2	src/Utility.h	/^static inline uint32_t guint32p2(uint32_t uiValue)$/;"	f
+handleInterrupt	src/Service.cpp	/^int Service::handleInterrupt(int sig)$/;"	f	class:tbutil::Service
+handleQueue	test/testfilequeue.cpp	/^bool handleQueue(void *data, int len, int threadIndex, void *arg)$/;"	f	class:CMyHandler
+handleQueue	test/testqueuethread.cpp	/^bool handleQueue (void *data, int len, int threadIndex, void *arg)$/;"	f	class:CMyHandler
+hasRun	test/testTimer.cpp	/^    hasRun() const$/;"	f	class:TestTask
+hashCode	src/stringutil.cpp	/^    int CStringUtil::hashCode(const char *str)$/;"	f	class:tbsys::CStringUtil
+head	src/linklist.h	/^        NodeT* head() const { return _head; }$/;"	f	class:tbsys::LinkList
+head	src/linklist.h	/^        void head(NodeT* h) { _head = h; }$/;"	f	class:tbsys::LinkList
+help	src/Service.cpp	/^void Service::help()$/;"	f	class:tbutil::Service
+hook	src/thread.h	/^    static void *hook(void *arg) {$/;"	f	class:tbsys::CThread
+htonll	src/Utility.h	/^static inline uint64_t htonll(uint64_t ull)$/;"	f
+id	src/TbThread.cpp	/^pthread_t Thread::id() const$/;"	f	class:tbutil::Thread
+initialize	src/Service.cpp	/^int Service::initialize()$/;"	f	class:tbutil::Service
+instance	src/Service.cpp	/^Service* Service::instance()$/;"	f	class:tbutil::Service
+interruptCallback	src/Service.cpp	/^int Service::interruptCallback( int sig )$/;"	f	class:tbutil::Service
+interruptCallback	test/testService.cpp	/^    virtual int interruptCallback( int signal )$/;"	f	class:testService
+interrupted	src/Network.cpp	/^bool interrupted()$/;"	f	namespace:tbutilInternal
+ipToAddr	src/tbnetutil.cpp	/^uint64_t CNetUtil::ipToAddr(uint32_t ip, int port)$/;"	f	class:tbsys::CNetUtil
+ipaddr_less	src/tbnetutil.h	/^struct ipaddr_less {$/;"	s	namespace:tbsys
+isAlive	src/TbThread.cpp	/^bool Thread::isAlive() const $/;"	f	class:tbutil::Thread
+isDirectory	src/fileutil.cpp	/^    bool CFileUtil::isDirectory(const char *szDirPath)$/;"	f	class:tbsys::CFileUtil
+isEmpty	src/filequeue.cpp	/^    int CFileQueue::isEmpty()$/;"	f	class:tbsys::CFileQueue
+isInt	src/stringutil.cpp	/^    int CStringUtil::isInt(const char *p) {$/;"	f	class:tbsys::CStringUtil
+isLocalAddr	src/tbnetutil.cpp	/^bool CNetUtil::isLocalAddr(uint32_t ip, bool loopSkip)$/;"	f	class:tbsys::CNetUtil
+isMaxCapacity	src/ThreadPool.cpp	/^bool ThreadPool::isMaxCapacity() const$/;"	f	class:tbutil::ThreadPool
+isReleased	src/profiler.h	/^	bool isReleased() {$/;"	f	class:tbsys::util::Entry
+isSectionName	src/config.cpp	/^    char *CConfig::isSectionName(char *str) {$/;"	f	class:tbsys::CConfig
+isSymLink	src/fileutil.cpp	/^    bool CFileUtil::isSymLink(const char *szDirPath)$/;"	f	class:tbsys::CFileUtil
+join	src/TbThread.cpp	/^int Thread::join()$/;"	f	class:tbutil::Thread
+join	src/thread.h	/^    void join() {$/;"	f	class:tbsys::CThread
+joinWithAllThreads	src/ThreadPool.cpp	/^void ThreadPool::joinWithAllThreads()$/;"	f	class:tbutil::ThreadPool
+key	src/profiler.h	/^	pthread_key_t key;$/;"	m	class:tbsys::util::ThreadLocal
+len	src/filequeue.h	/^        int len;$/;"	m	struct:tbsys::queue_item
+len	src/queuethread.h	/^                int len;$/;"	m	struct:tbsys::CQueueThread::data_pair
+line	src/Exception.cpp	/^int Exception::line() const$/;"	f	class:tbutil::Exception
+load	src/config.cpp	/^    int CConfig::load(const char *filename)$/;"	f	class:tbsys::CConfig
+lock	src/Monitor.h	/^Monitor<T>::lock() const$/;"	f	class:tbutil::Monitor
+lock	src/Mutex.cpp	/^void Mutex::lock() const$/;"	f	class:tbutil::Mutex
+lock	src/Mutex.cpp	/^void Mutex::lock(LockState&) const$/;"	f	class:tbutil::Mutex
+lock	src/RecMutex.cpp	/^void RecMutex::lock() const$/;"	f	class:tbutil::RecMutex
+lock	src/RecMutex.cpp	/^void RecMutex::lock(LockState& state) const$/;"	f	class:tbutil::RecMutex
+lock	src/StaticMutex.h	/^StaticMutex::lock(LockState&) const$/;"	f	class:tbutil::StaticMutex
+lock	src/StaticMutex.h	/^inline void StaticMutex::lock() const$/;"	f	class:tbutil::StaticMutex
+lock	src/tbrwlock.cpp	/^int CRLock::lock() const$/;"	f	class:CRLock
+lock	src/tbrwlock.cpp	/^int CWLock::lock() const$/;"	f	class:CWLock
+lock	src/threadmutex.h	/^    void lock () {$/;"	f	class:tbsys::CThreadMutex
+logMessage	src/tblog.cpp	/^void CLogger::logMessage(int level,const char *file, int line, const char *function,const char *fmt, ...) {$/;"	f	class:tbsys::CLogger
+mQueueThread	test/testfilequeue.cpp	/^CFileQueueThread *mQueueThread = NULL;$/;"	v
+mQueueThread	test/testqueuethread.cpp	/^CQueueThread *mQueueThread = NULL;$/;"	v
+mReadCount	test/testfilequeue.cpp	/^atomic_t mReadCount;$/;"	v
+mReadCount	test/testqueuethread.cpp	/^atomic_t mReadCount;$/;"	v
+mWriteCount	test/testfilequeue.cpp	/^int mWriteCount = 1000;$/;"	v
+mWriteCount	test/testqueuethread.cpp	/^int mWriteCount = 1000;$/;"	v
+m_configMap	src/config.h	/^            STR_MAP m_configMap;$/;"	m	class:tbsys::CConfig
+m_head	src/filequeue.h	/^            qinfo_head m_head;$/;"	m	class:tbsys::CFileQueue
+m_infoFd	src/filequeue.h	/^            int m_infoFd;$/;"	m	class:tbsys::CFileQueue
+m_maxFileSize	src/filequeue.h	/^            int m_maxFileSize;$/;"	m	class:tbsys::CFileQueue
+m_profiler	src/profiler.cpp	/^	Profiler Profiler::m_profiler;$/;"	m	class:tbsys::util::Profiler	file:
+m_profiler	src/profiler.h	/^	static Profiler m_profiler;$/;"	m	class:tbsys::util::Profiler
+m_queuePath	src/filequeue.h	/^            char *m_queuePath;$/;"	m	class:tbsys::CFileQueue
+m_readFd	src/filequeue.h	/^            int m_readFd;$/;"	m	class:tbsys::CFileQueue
+m_writeFd	src/filequeue.h	/^            int m_writeFd;$/;"	m	class:tbsys::CFileQueue
+main	src/Service.cpp	/^int Service::main(int argc,char*argv[])$/;"	f	class:tbutil::Service
+main	test/testService.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	test/testThreadPool.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	test/testTimer.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	test/testconfig.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	test/testfilequeue.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	test/testfileutil.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	test/testlog.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	test/testnetutil.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	test/testqueuethread.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	test/teststringutil.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	test/testthread.cpp	/^int main()$/;"	f
+main	test/testtimeutil.cpp	/^int main(int argc, char *argv[])$/;"	f
+message	src/profiler.h	/^  std::string message;$/;"	m	class:tbsys::util::Entry
+microSeconds	src/Time.cpp	/^Time Time::microSeconds(Int64 t)$/;"	f	class:tbutil::Time
+milliSeconds	src/Time.cpp	/^Time Time::milliSeconds(Int64 t)$/;"	f	class:tbutil::Time
+mkdirs	src/fileutil.cpp	/^    bool CFileUtil::mkdirs(char *szDirPath) $/;"	f	class:tbsys::CFileUtil
+murMurHash	src/stringutil.cpp	/^    unsigned int CStringUtil::murMurHash(const void *key, int len)$/;"	f	class:tbsys::CStringUtil
+mutex	src/Mutex.h	/^        pthread_mutex_t* mutex;$/;"	m	struct:tbutil::Mutex::LockState
+mutex	src/RecMutex.h	/^        pthread_mutex_t* mutex;$/;"	m	struct:tbutil::RecMutex::LockState
+mutex	src/StaticMutex.h	/^        pthread_mutex_t* mutex;$/;"	m	struct:tbutil::StaticMutex::LockState
+name	src/Exception.cpp	/^string Exception::name() const$/;"	f	class:tbutil::Exception
+name	src/Exception.cpp	/^string IllegalArgumentException::name() const$/;"	f	class:tbutil::IllegalArgumentException
+name	src/Exception.cpp	/^string NullHandleException::name() const$/;"	f	class:tbutil::NullHandleException
+name	src/Exception.cpp	/^string SyscallException::name() const$/;"	f	class:tbutil::SyscallException
+name	src/ThreadException.cpp	/^string BadThreadControlException::name() const$/;"	f	class:tbutil::BadThreadControlException
+name	src/ThreadException.cpp	/^string InvalidTimeoutException::name() const$/;"	f	class:tbutil::InvalidTimeoutException
+name	src/ThreadException.cpp	/^string ThreadCreateException::name() const$/;"	f	class:tbutil::ThreadCreateException
+name	src/ThreadException.cpp	/^string ThreadLockedException::name() const$/;"	f	class:tbutil::ThreadLockedException
+name	src/ThreadException.cpp	/^string ThreadNotStartedException::name() const$/;"	f	class:tbutil::ThreadNotStartedException
+name	src/ThreadException.cpp	/^string ThreadStartedException::name() const$/;"	f	class:tbutil::ThreadStartedException
+name	src/ThreadException.cpp	/^string ThreadSyscallException::name() const$/;"	f	class:tbutil::ThreadSyscallException
+name	test/testBase.cpp	/^std::string testBase::name() const$/;"	f	class:testBase
+newUUID	test/testnetutil.cpp	/^uint64_t newUUID()$/;"	f
+node_pointer_type	src/linklist.h	/^        typedef NodeT* node_pointer_type;$/;"	t	class:tbsys::LinkList
+noncopyable	src/tbsys.h	/^    noncopyable() { }$/;"	f	class:tbutil::noncopyable
+noncopyable	src/tbsys.h	/^class noncopyable$/;"	c	namespace:tbutil
+notify	src/Monitor.h	/^Monitor<T>::notify()$/;"	f	class:tbutil::Monitor
+notifyAll	src/Monitor.h	/^Monitor<T>::notifyAll()$/;"	f	class:tbutil::Monitor
+notifyImpl	src/Monitor.h	/^Monitor<T>::notifyImpl(int nnotify) const$/;"	f	class:tbutil::Monitor
+now	src/Time.cpp	/^Time Time::now(Clock clock)$/;"	f	class:tbutil::Time
+ntohll	src/Utility.h	/^static inline uint64_t ntohll(uint64_t ull)$/;"	f
+offset	src/filequeue.h	/^        int offset;$/;"	m	struct:tbsys::unsettle
+openReadFile	src/filequeue.cpp	/^    int CFileQueue::openReadFile()$/;"	f	class:tbsys::CFileQueue
+openWriteFile	src/filequeue.cpp	/^    int CFileQueue::openWriteFile()$/;"	f	class:tbsys::CFileQueue
+operator !=	src/Handle.h	/^inline bool operator!=(const HandleBase<T>& lhs, const HandleBase<U>& rhs)$/;"	f	namespace:tbutil
+operator !=	src/Time.h	/^    bool operator!=(const Time& rhs) const$/;"	f	class:tbutil::Time
+operator ()	src/Functional.h	/^    R operator()(H handle) const$/;"	f	class:tbutil::ConstMemFun
+operator ()	src/Timer.h	/^        bool operator()(const TimerTaskPtr& lhs, const TimerTaskPtr& rhs) const$/;"	f	class:tbutil::Timer::TimerTaskCompare
+operator ()	src/config.h	/^        bool operator()(const char* s1, const char* s2) const {$/;"	f	struct:tbsys::char_equal
+operator ()	src/config.h	/^        size_t operator()(const std::string& str) const {$/;"	f	struct:tbsys::str_hash
+operator ()	src/tbnetutil.h	/^    bool operator()(const uint64_t a, const uint64_t b) const {$/;"	f	struct:tbsys::ipaddr_less
+operator *	src/Handle.h	/^    T& operator*() const$/;"	f	class:tbutil::HandleBase
+operator *	src/Time.h	/^    Time operator*(Int64 rhs) const$/;"	f	class:tbutil::Time
+operator *	src/Time.h	/^    Time operator*(double rhs) const$/;"	f	class:tbutil::Time
+operator *	src/Time.h	/^    Time operator*(int rhs) const$/;"	f	class:tbutil::Time
+operator *=	src/Time.h	/^    Time& operator*=(Int64 rhs)$/;"	f	class:tbutil::Time
+operator *=	src/Time.h	/^    Time& operator*=(double rhs)$/;"	f	class:tbutil::Time
+operator *=	src/Time.h	/^    Time& operator*=(int rhs)$/;"	f	class:tbutil::Time
+operator +	src/Time.h	/^    Time operator+(const Time& rhs) const$/;"	f	class:tbutil::Time
+operator +=	src/Time.h	/^    Time& operator+=(const Time& rhs)$/;"	f	class:tbutil::Time
+operator -	src/Time.h	/^    Time operator-() const$/;"	f	class:tbutil::Time
+operator -	src/Time.h	/^    Time operator-(const Time& rhs) const$/;"	f	class:tbutil::Time
+operator -=	src/Time.h	/^    Time& operator-=(const Time& rhs)$/;"	f	class:tbutil::Time
+operator ->	src/Handle.h	/^    T* operator->() const$/;"	f	class:tbutil::HandleBase
+operator /	src/Time.h	/^    Time operator\/(Int64 rhs) const$/;"	f	class:tbutil::Time
+operator /	src/Time.h	/^    Time operator\/(double rhs) const$/;"	f	class:tbutil::Time
+operator /	src/Time.h	/^    Time operator\/(int rhs) const$/;"	f	class:tbutil::Time
+operator /	src/Time.h	/^    double operator\/(const Time& rhs) const$/;"	f	class:tbutil::Time
+operator /=	src/Time.h	/^    Time& operator\/=(Int64 rhs)$/;"	f	class:tbutil::Time
+operator /=	src/Time.h	/^    Time& operator\/=(double rhs)$/;"	f	class:tbutil::Time
+operator /=	src/Time.h	/^    Time& operator\/=(int rhs)$/;"	f	class:tbutil::Time
+operator <	src/Handle.h	/^inline bool operator<(const HandleBase<T>& lhs, const HandleBase<U>& rhs)$/;"	f	namespace:tbutil
+operator <	src/Time.h	/^    bool operator<(const Time& rhs) const$/;"	f	class:tbutil::Time
+operator <	src/Timer.h	/^Timer::Token::operator<(const Timer::Token& r) const$/;"	f	class:tbutil::Timer::Token
+operator <	test/testTimer.cpp	/^    operator<(const TestTask& r) const$/;"	f	class:TestTask
+operator <<	src/Exception.cpp	/^std::ostream& operator << (std::ostream& out, const Exception& ex)$/;"	f	namespace:tbutil
+operator <<	src/bytebuffer.h	/^            template <typename T> ByteBuffer & operator<<(const T &e) throw (out_of_range) { return put(e); }$/;"	f	class:tbutil::ByteBuffer
+operator <=	src/Handle.h	/^inline bool operator<=(const HandleBase<T>& lhs, const HandleBase<U>& rhs)$/;"	f	namespace:tbutil
+operator <=	src/Time.h	/^    bool operator<=(const Time& rhs) const$/;"	f	class:tbutil::Time
+operator =	src/Handle.h	/^    Handle& operator=(T* p)$/;"	f	class:tbutil::Handle
+operator =	src/Handle.h	/^    Handle& operator=(const Handle& r)$/;"	f	class:tbutil::Handle
+operator =	src/Handle.h	/^    Handle& operator=(const Handle<Y>& r)$/;"	f	class:tbutil::Handle
+operator =	src/Shared.h	/^    Shared& operator=(const Shared&)$/;"	f	class:tbutil::Shared
+operator =	src/Shared.h	/^    SimpleShared& operator=(const SimpleShared&)$/;"	f	class:tbutil::SimpleShared
+operator =	src/bytebuffer.cpp	/^ByteBuffer & ByteBuffer::operator=(const ByteBuffer& rhs)$/;"	f	class:ByteBuffer
+operator ==	src/Handle.h	/^inline bool operator==(const HandleBase<T>& lhs, const HandleBase<U>& rhs)$/;"	f	namespace:tbutil
+operator ==	src/Time.h	/^    bool operator==(const Time& rhs) const$/;"	f	class:tbutil::Time
+operator >	src/Handle.h	/^inline bool operator>(const HandleBase<T>& lhs, const HandleBase<U>& rhs)$/;"	f	namespace:tbutil
+operator >	src/Time.h	/^    bool operator>(const Time& rhs) const$/;"	f	class:tbutil::Time
+operator >=	src/Handle.h	/^inline bool operator>=(const HandleBase<T>& lhs, const HandleBase<U>& rhs)$/;"	f	namespace:tbutil
+operator >=	src/Time.h	/^    bool operator>=(const Time& rhs) const$/;"	f	class:tbutil::Time
+operator >>	src/bytebuffer.h	/^            template <typename T> ByteBuffer & operator>>(T &e) throw (out_of_range) { return get(e); }$/;"	f	class:tbutil::ByteBuffer
+operator bool	src/Handle.h	/^    operator bool() const$/;"	f	class:tbutil::HandleBase
+operator timeval	src/Time.cpp	/^Time::operator timeval() const$/;"	f	class:tbutil::Time
+out_of_range	src/bytebuffer.cpp	/^ByteBuffer::out_of_range::out_of_range(uint32_t p, uint32_t l, uint32_t s)$/;"	f	class:ByteBuffer::out_of_range
+out_of_range	src/bytebuffer.h	/^            class out_of_range : public std::exception$/;"	c	class:tbutil::ByteBuffer
+own_	src/bytebuffer.h	/^            bool  own_;$/;"	m	class:tbutil::ByteBuffer
+parent	src/profiler.h	/^	Entry *parent;$/;"	m	class:tbsys::util::Entry
+parseValue	src/config.cpp	/^    int CConfig::parseValue(char *str, char *key, char *val)$/;"	f	class:tbsys::CConfig
+peek	src/bytebuffer.h	/^        const ByteBuffer & ByteBuffer::peek(T & e) const$/;"	f	class:tbutil::ByteBuffer
+pid	src/thread.h	/^    int pid;            \/\/ 线程的进程ID$/;"	m	class:tbsys::CThread
+pool	test/testThreadPool.cpp	/^static ThreadPool * pool = NULL;$/;"	v	file:
+pop	src/filequeue.cpp	/^    queue_item *CFileQueue::pop(uint32_t index)$/;"	f	class:tbsys::CFileQueue
+pos	src/filequeue.h	/^        unsettle pos;$/;"	m	struct:tbsys::queue_item
+pos	src/filequeue.h	/^        unsettle pos[TBFQ_MAX_THREAD_COUNT]; \/\/ 正在处理的位置$/;"	m	struct:tbsys::qinfo_head
+position	src/bytebuffer.cpp	/^uint32_t ByteBuffer::position(uint32_t p) throw (ByteBuffer::out_of_range)$/;"	f	class:ByteBuffer
+position	src/bytebuffer.h	/^            uint32_t  position() const { return position_; }$/;"	f	class:tbutil::ByteBuffer
+position_	src/bytebuffer.h	/^            uint32_t position_;$/;"	m	class:tbutil::ByteBuffer
+print	src/Exception.cpp	/^void Exception::print(ostream& out) const$/;"	f	class:tbutil::Exception
+print	src/Exception.cpp	/^void IllegalArgumentException::print(ostream& out) const$/;"	f	class:tbutil::IllegalArgumentException
+print	src/Exception.cpp	/^void SyscallException::print(ostream& os) const$/;"	f	class:tbutil::SyscallException
+print	src/ThreadException.cpp	/^void InvalidTimeoutException::print(ostream& os) const$/;"	f	class:tbutil::InvalidTimeoutException
+print	src/ThreadException.cpp	/^void ThreadCreateException::print(ostream& os ) const$/;"	f	class:tbutil::ThreadCreateException
+promoteFollower	src/ThreadPool.cpp	/^void ThreadPool::promoteFollower( pthread_t thid )$/;"	f	class:tbutil::ThreadPool
+push	src/filequeue.cpp	/^    int CFileQueue::push(void *data, int len)$/;"	f	class:tbsys::CFileQueue
+put	src/bytebuffer.cpp	/^ByteBuffer & ByteBuffer::put(const char* src, $/;"	f	class:ByteBuffer
+put	src/bytebuffer.h	/^            ByteBuffer & put(const std::string & e) throw (out_of_range) { return putString(e);  }$/;"	f	class:tbutil::ByteBuffer
+put	src/bytebuffer.h	/^        ByteBuffer & ByteBuffer::put(const T & e) $/;"	f	class:tbutil::ByteBuffer
+put	src/bytebuffer.h	/^        ByteBuffer & ByteBuffer::put(const std::vector<T> & v) $/;"	f	class:tbutil::ByteBuffer
+putString	src/bytebuffer.cpp	/^ByteBuffer & ByteBuffer::putString(const std::string & v) throw (ByteBuffer::out_of_range)$/;"	f	class:ByteBuffer
+qinfo_head	src/filequeue.h	/^    typedef struct qinfo_head {$/;"	s	namespace:tbsys
+qinfo_head	src/filequeue.h	/^    } qinfo_head;$/;"	t	namespace:tbsys	typeref:struct:tbsys::qinfo_head
+queue_item	src/filequeue.h	/^    typedef struct queue_item {$/;"	s	namespace:tbsys
+queue_item	src/filequeue.h	/^    } queue_item;$/;"	t	namespace:tbsys	typeref:struct:tbsys::queue_item
+queue_size	src/filequeue.h	/^        int queue_size;         \/\/ 队列长度$/;"	m	struct:tbsys::qinfo_head
+rawData	src/bytebuffer.cpp	/^const ByteBuffer & ByteBuffer::rawData(int index, const char* &dst, $/;"	f	class:ByteBuffer
+rdlock	src/tbrwlock.cpp	/^int CRWSimpleLock::rdlock()$/;"	f	class:CRWSimpleLock
+read_offset	src/filequeue.h	/^        int read_offset;        \/\/ 读文件的offset$/;"	m	struct:tbsys::qinfo_head
+read_seqno	src/filequeue.h	/^        uint32_t read_seqno;    \/\/ 读文件的seqno$/;"	m	struct:tbsys::qinfo_head
+reason	src/Exception.cpp	/^string IllegalArgumentException::reason() const$/;"	f	class:tbutil::IllegalArgumentException
+recoverRecord	src/filequeue.cpp	/^    void CFileQueue::recoverRecord() {$/;"	f	class:tbsys::CFileQueue
+release	src/Lock.h	/^    void release() const$/;"	f	class:tbutil::LockT
+release	src/profiler.h	/^	void release() {$/;"	f	class:tbsys::util::Entry
+remaining	src/bytebuffer.h	/^            int32_t   remaining() const { return size_ - position_; }$/;"	f	class:tbutil::ByteBuffer
+remove	src/linklist.h	/^void LinkList<NodeT>::remove(NodeT* node)$/;"	f	class:tbsys::LinkList
+reserve	src/filequeue.h	/^        int reserve[2];            $/;"	m	struct:tbsys::qinfo_head
+reset	src/bytebuffer.cpp	/^void ByteBuffer::reset()$/;"	f	class:ByteBuffer
+reset	src/bytebuffer.cpp	/^void ByteBuffer::reset(uint32_t size)$/;"	f	class:ByteBuffer
+reset	src/linklist.h	/^void LinkList<NodeT>::reset()$/;"	f	class:tbsys::LinkList
+reset	src/profiler.cpp	/^	void Profiler::reset() {$/;"	f	class:tbsys::util::Profiler
+rlock	src/tbrwlock.h	/^        CRLock* rlock() const {return _rlock;}$/;"	f	class:tbsys::CRWLock
+rotateLog	src/tblog.cpp	/^void CLogger::rotateLog(const char *filename, const char *fmt) {$/;"	f	class:tbsys::CLogger
+run	src/ThreadPool.cpp	/^bool ThreadPool::run( pthread_t thid)$/;"	f	class:tbutil::ThreadPool
+run	src/ThreadPool.cpp	/^void ThreadPool::EventHandlerThread::run()$/;"	f	class:tbutil::ThreadPool::EventHandlerThread
+run	src/Timer.cpp	/^Timer::run()$/;"	f	class:tbutil::Timer
+run	src/filequeuethread.cpp	/^    void CFileQueueThread::run(CThread *thread, void *args)$/;"	f	class:tbsys::CFileQueueThread
+run	src/queuethread.cpp	/^    void CQueueThread::run(CThread *thread, void *args)$/;"	f	class:tbsys::CQueueThread
+run	test/testService.cpp	/^    virtual int run(int argc, char*argv[], const std::string& config, std::string& errMsg)$/;"	f	class:testService
+run	test/testthread.cpp	/^     virtual void run()$/;"	f	class:AliveTest
+run	test/testthread.cpp	/^    virtual void run()$/;"	f	class:AliveTestThread
+run	test/testthread.cpp	/^    virtual void run()$/;"	f	class:MonitorMutexTestThread2
+run	test/testthread.cpp	/^    virtual void run()$/;"	f	class:RecMutexTestThread
+run	test/testthread.cpp	/^   virtual void run()$/;"	f	class:MonitorMutexTestThread
+run	test/testthread.cpp	/^void MonitorMutxTest::run()$/;"	f	class:MonitorMutxTest
+run	test/testthread.cpp	/^void RecMutexTest::run()$/;"	f	class:RecMutexTest
+runDaemon	src/Service.cpp	/^int Service::runDaemon( int argc ,char* argv[] )$/;"	f	class:tbutil::Service
+runTimerTask	test/testThreadPool.cpp	/^    runTimerTask()$/;"	f	class:ScheduleTask
+runTimerTask	test/testTimer.cpp	/^    runTimerTask()$/;"	f	class:DestroyTask
+runTimerTask	test/testTimer.cpp	/^    runTimerTask()$/;"	f	class:TestTask
+runnable	src/thread.h	/^    Runnable *runnable;$/;"	m	class:tbsys::CThread
+schedule	src/Timer.cpp	/^int Timer::schedule(const TimerTaskPtr& task, const Time& delay)$/;"	f	class:tbutil::Timer
+scheduleRepeated	src/Timer.cpp	/^int Timer::scheduleRepeated(const TimerTaskPtr& task, const Time& delay)$/;"	f	class:tbutil::Timer
+scheduledTime	src/Timer.h	/^        Time scheduledTime;$/;"	m	struct:tbutil::Timer::Token
+seconds	src/Time.cpp	/^Time Time::seconds(Int64 t)$/;"	f	class:tbutil::Time
+self_type	src/linklist.h	/^        typedef LinkList<NodeT> self_type;$/;"	t	class:tbsys::LinkList
+seqno	src/filequeue.h	/^        uint32_t seqno;$/;"	m	struct:tbsys::unsettle
+service	src/Service.cpp	/^bool Service::service() const$/;"	f	class:tbutil::Service
+set	src/profiler.h	/^	void set(T data) { pthread_setspecific(key, (void *)data); }$/;"	f	class:tbsys::util::ThreadLocal
+setBlock	src/Network.cpp	/^int setBlock( SOCKET fd , bool block )$/;"	f	namespace:tbutilInternal
+setCallback	src/CtrlCHandler.cpp	/^void CtrlCHandler::setCallback(CtrlCHandlerCallback callback)$/;"	f	class:tbutil::CtrlCHandler
+setCheck	src/tblog.h	/^    void setCheck(int v) {_check = v;}$/;"	f	class:tbsys::CLogger
+setFileName	src/tblog.cpp	/^void CLogger::setFileName(const char *filename, bool flag) {$/;"	f	class:tbsys::CLogger
+setLogLevel	src/tblog.cpp	/^void CLogger::setLogLevel(const char *level) {$/;"	f	class:tbsys::CLogger
+setMaxFileIndex	src/tblog.cpp	/^void CLogger::setMaxFileIndex( int maxFileIndex )$/;"	f	class:tbsys::CLogger
+setMaxFileSize	src/tblog.cpp	/^void CLogger::setMaxFileSize( int64_t maxFileSize)$/;"	f	class:tbsys::CLogger
+setThreadCount	src/defaultrunnable.cpp	/^void CDefaultRunnable::setThreadCount(int threadCount)$/;"	f	class:tbsys::CDefaultRunnable
+shutdown	src/Service.cpp	/^int Service::shutdown()$/;"	f	class:tbutil::Service
+signal	src/Cond.cpp	/^void Cond::signal()$/;"	f	class:tbutil::Cond
+signal	src/threadcond.h	/^    void signal() {$/;"	f	class:tbsys::CThreadCond
+signal	test/testthread.cpp	/^    void signal()$/;"	f	class:CondVar
+sigwaitThread	src/CtrlCHandler.cpp	/^static void* sigwaitThread(void*)$/;"	f	file:
+size	src/bytebuffer.h	/^            uint32_t  size() const { return size_; }$/;"	f	class:tbutil::ByteBuffer
+size_	src/bytebuffer.h	/^            uint32_t size_;$/;"	m	class:tbutil::ByteBuffer
+split	src/stringutil.cpp	/^    void CStringUtil::split(char *str, const char *delim, std::vector<char*> &list) $/;"	f	class:tbsys::CStringUtil
+ssleep	src/TbThread.cpp	/^void Thread::ssleep(const tbutil::Time& timeout)$/;"	f	class:tbutil::Thread
+start	src/Service.cpp	/^int Service::start(int argc , char* argv[] )$/;"	f	class:tbutil::Service
+start	src/TbThread.cpp	/^int Thread::start(size_t stackSize)$/;"	f	class:tbutil::Thread
+start	src/defaultrunnable.cpp	/^void CDefaultRunnable::start() {$/;"	f	class:tbsys::CDefaultRunnable
+start	src/profiler.cpp	/^	void Profiler::start(const string& description) {$/;"	f	class:tbsys::util::Profiler
+start	src/thread.h	/^    void start(Runnable *r, void *a) {$/;"	f	class:tbsys::CThread
+start	test/testBase.cpp	/^void testBase::start()$/;"	f	class:testBase
+startDaemon	src/process.cpp	/^    int CProcess::startDaemon(const char *szPidFile, const char *szLogFile)$/;"	f	class:tbsys::CProcess
+startHook	src/TbThread.cpp	/^static void* startHook(void* arg)$/;"	f	file:
+status	src/profiler.h	/^	int status;$/;"	m	class:tbsys::util::Profiler
+stime	src/profiler.h	/^	uint64_t stime;$/;"	m	class:tbsys::util::Entry
+stop	src/Service.cpp	/^void Service::stop()$/;"	f	class:tbutil::Service
+stop	src/defaultrunnable.cpp	/^void CDefaultRunnable::stop() {$/;"	f	class:tbsys::CDefaultRunnable
+stop	src/filequeuethread.cpp	/^    void CFileQueueThread::stop()$/;"	f	class:tbsys::CFileQueueThread
+stop	src/profiler.cpp	/^	void Profiler::stop() {$/;"	f	class:tbsys::util::Profiler
+stop	src/queuethread.cpp	/^    void CQueueThread::stop()$/;"	f	class:tbsys::CQueueThread
+strJoin	src/Utility.cpp	/^int strJoin(char *pszDst, size_t sizeDst, char **ppszField, size_t sizeField, const char *pszSep)$/;"	f	namespace:tbsys
+strToAddr	src/tbnetutil.cpp	/^uint64_t CNetUtil::strToAddr(const char *ip, int port)$/;"	f	class:tbsys::CNetUtil
+strToInt	src/stringutil.cpp	/^    int CStringUtil::strToInt(const char *str, int d)$/;"	f	class:tbsys::CStringUtil
+strToLower	src/stringutil.cpp	/^    char *CStringUtil::strToLower(char *pszBuf)$/;"	f	class:tbsys::CStringUtil
+strToTime	src/tbtimeutil.cpp	/^int CTimeUtil::strToTime(char *str)$/;"	f	class:tbsys::CTimeUtil
+strToUpper	src/stringutil.cpp	/^    char *CStringUtil::strToUpper(char *pszBuf)$/;"	f	class:tbsys::CStringUtil
+str_hash	src/config.h	/^    struct str_hash {$/;"	s	namespace:tbsys
+subEntries	src/profiler.h	/^  std::vector<Entry *> subEntries;$/;"	m	class:tbsys::util::Entry
+swap	src/Handle.h	/^    void swap(HandleBase& other)$/;"	f	class:tbutil::HandleBase
+tail	src/linklist.h	/^        NodeT* tail() const { return _tail; }$/;"	f	class:tbsys::LinkList
+tail	src/linklist.h	/^        void tail(NodeT* t) { _tail = t; }$/;"	f	class:tbsys::LinkList
+task	src/Timer.h	/^        TimerTaskPtr task;$/;"	m	struct:tbutil::Timer::Token
+tbsys	src/Memory.hpp	/^namespace tbsys$/;"	n
+tbsys	src/PublicDefine.h	/^namespace tbsys$/;"	n
+tbsys	src/Utility.cpp	/^namespace tbsys$/;"	n	file:
+tbsys	src/Utility.h	/^namespace tbsys$/;"	n
+tbsys	src/config.cpp	/^namespace tbsys {$/;"	n	file:
+tbsys	src/config.h	/^namespace tbsys {$/;"	n
+tbsys	src/defaultrunnable.cpp	/^namespace tbsys {$/;"	n	file:
+tbsys	src/defaultrunnable.h	/^namespace tbsys {$/;"	n
+tbsys	src/filequeue.cpp	/^namespace tbsys {$/;"	n	file:
+tbsys	src/filequeue.h	/^namespace tbsys {$/;"	n
+tbsys	src/filequeuethread.cpp	/^namespace tbsys {$/;"	n	file:
+tbsys	src/filequeuethread.h	/^namespace tbsys {$/;"	n
+tbsys	src/fileutil.cpp	/^namespace tbsys {$/;"	n	file:
+tbsys	src/fileutil.h	/^namespace tbsys {$/;"	n
+tbsys	src/iqueuehandler.h	/^namespace tbsys {$/;"	n
+tbsys	src/linklist.h	/^namespace tbsys {$/;"	n
+tbsys	src/process.cpp	/^namespace tbsys {$/;"	n	file:
+tbsys	src/process.h	/^namespace tbsys {$/;"	n
+tbsys	src/profiler.cpp	/^namespace tbsys$/;"	n	file:
+tbsys	src/profiler.h	/^namespace tbsys { namespace util {$/;"	n
+tbsys	src/queuethread.cpp	/^namespace tbsys {$/;"	n	file:
+tbsys	src/queuethread.h	/^namespace tbsys {$/;"	n
+tbsys	src/runnable.h	/^namespace tbsys {$/;"	n
+tbsys	src/stringutil.cpp	/^namespace tbsys {$/;"	n	file:
+tbsys	src/stringutil.h	/^namespace tbsys {$/;"	n
+tbsys	src/tblockguard.h	/^namespace tbsys$/;"	n
+tbsys	src/tblog.cpp	/^namespace tbsys $/;"	n	file:
+tbsys	src/tblog.h	/^namespace tbsys {$/;"	n
+tbsys	src/tbnetutil.cpp	/^namespace tbsys {$/;"	n	file:
+tbsys	src/tbnetutil.h	/^namespace tbsys {$/;"	n
+tbsys	src/tbrwlock.h	/^namespace tbsys$/;"	n
+tbsys	src/tbsys.h	/^namespace tbsys {$/;"	n
+tbsys	src/tbtimeutil.cpp	/^namespace tbsys {$/;"	n	file:
+tbsys	src/tbtimeutil.h	/^namespace tbsys {$/;"	n
+tbsys	src/thread.h	/^namespace tbsys {$/;"	n
+tbsys	src/threadcond.h	/^namespace tbsys {$/;"	n
+tbsys	src/threadmutex.h	/^namespace tbsys {$/;"	n
+tbutil	src/Cond.cpp	/^namespace tbutil$/;"	n	file:
+tbutil	src/Cond.h	/^namespace tbutil$/;"	n
+tbutil	src/CtrlCHandler.cpp	/^namespace tbutil$/;"	n	file:
+tbutil	src/CtrlCHandler.h	/^namespace tbutil$/;"	n
+tbutil	src/EventHandler.h	/^namespace tbutil$/;"	n
+tbutil	src/Exception.cpp	/^namespace tbutil$/;"	n	file:
+tbutil	src/Exception.h	/^namespace tbutil$/;"	n
+tbutil	src/Functional.h	/^namespace tbutil$/;"	n
+tbutil	src/Handle.h	/^namespace tbutil$/;"	n
+tbutil	src/Lock.h	/^namespace tbutil $/;"	n
+tbutil	src/Monitor.h	/^namespace tbutil$/;"	n
+tbutil	src/Mutex.cpp	/^namespace tbutil$/;"	n	file:
+tbutil	src/Mutex.h	/^namespace tbutil$/;"	n
+tbutil	src/RecMutex.cpp	/^namespace tbutil$/;"	n	file:
+tbutil	src/RecMutex.h	/^namespace tbutil$/;"	n
+tbutil	src/Service.cpp	/^namespace tbutil$/;"	n	file:
+tbutil	src/Service.h	/^namespace tbutil$/;"	n
+tbutil	src/Shared.cpp	/^namespace tbutil $/;"	n	file:
+tbutil	src/Shared.h	/^namespace tbutil$/;"	n
+tbutil	src/StaticMutex.h	/^namespace tbutil$/;"	n
+tbutil	src/TbThread.cpp	/^namespace tbutil$/;"	n	file:
+tbutil	src/TbThread.h	/^namespace tbutil$/;"	n
+tbutil	src/ThreadException.cpp	/^namespace tbutil$/;"	n	file:
+tbutil	src/ThreadException.h	/^namespace tbutil$/;"	n
+tbutil	src/ThreadPool.cpp	/^namespace tbutil$/;"	n	file:
+tbutil	src/ThreadPool.h	/^namespace tbutil $/;"	n
+tbutil	src/Time.cpp	/^namespace tbutil$/;"	n	file:
+tbutil	src/Time.h	/^namespace tbutil$/;"	n
+tbutil	src/Timer.cpp	/^namespace tbutil$/;"	n	file:
+tbutil	src/Timer.h	/^namespace tbutil $/;"	n
+tbutil	src/bytebuffer.h	/^namespace tbutil { $/;"	n
+tbutil	src/tbsys.h	/^namespace tbutil$/;"	n
+tbutilInternal	src/Network.cpp	/^namespace tbutilInternal$/;"	n	file:
+tbutilInternal	src/Network.h	/^namespace tbutilInternal$/;"	n
+test	test/testCommon.h	27;"	d
+test1	test/testnetutil.cpp	/^void test1()$/;"	f
+testBase	test/testBase.cpp	/^testBase::testBase(const string& name):$/;"	f	class:testBase
+testBase	test/testBase.h	/^class testBase : public Shared$/;"	c
+testBasePtr	test/testBase.h	/^typedef tbutil::Handle<testBase> testBasePtr;$/;"	t
+testFailed	test/testBase.cpp	/^testFailed::testFailed(const std::string& name ):$/;"	f	class:testFailed
+testFailed	test/testBase.h	/^class testFailed$/;"	c
+testFailed	test/testCommon.h	/^void inline testFailed(const char* expr, const char* file, unsigned int line)$/;"	f
+testService	test/testService.cpp	/^     testService(){}$/;"	f	class:testService
+testService	test/testService.cpp	/^class testService : public Service$/;"	c	file:
+threshold	src/profiler.h	/^	int threshold;$/;"	m	class:tbsys::util::Profiler
+throwNullHandleException	src/Handle.h	/^HandleBase<T>::throwNullHandleException(const char* file, int line) const$/;"	f	class:tbutil::HandleBase
+tid	src/thread.h	/^    pthread_t tid;      \/\/ pthread_self() id$/;"	m	class:tbsys::CThread
+timeToStr	src/tbtimeutil.cpp	/^char *CTimeUtil::timeToStr(time_t t, char *dest)$/;"	f	class:tbsys::CTimeUtil
+timedWait	src/Cond.h	/^    timedWait(const Lock& lock, const Time& timeout) const$/;"	f	class:tbutil::Cond
+timedWait	src/Monitor.h	/^Monitor<T>::timedWait(const Time& timeout) const$/;"	f	class:tbutil::Monitor
+timedWaitImpl	src/Cond.h	/^Cond::timedWaitImpl(const M& mutex, const Time& timeout) const$/;"	f	class:tbutil::Cond
+toDateTime	src/Time.cpp	/^std::string Time::toDateTime() const$/;"	f	class:tbutil::Time
+toDuration	src/Time.cpp	/^std::string Time::toDuration() const$/;"	f	class:tbutil::Time
+toMicroSeconds	src/Time.cpp	/^Int64 Time::toMicroSeconds() const$/;"	f	class:tbutil::Time
+toMicroSecondsDouble	src/Time.cpp	/^double Time::toMicroSecondsDouble() const$/;"	f	class:tbutil::Time
+toMilliSeconds	src/Time.cpp	/^Int64 Time::toMilliSeconds() const$/;"	f	class:tbutil::Time
+toMilliSecondsDouble	src/Time.cpp	/^double Time::toMilliSecondsDouble() const$/;"	f	class:tbutil::Time
+toSeconds	src/Time.cpp	/^Int64 Time::toSeconds() const$/;"	f	class:tbutil::Time
+toSecondsDouble	src/Time.cpp	/^double Time::toSecondsDouble() const$/;"	f	class:tbutil::Time
+toString	src/config.cpp	/^    string CConfig::toString()$/;"	f	class:tbsys::CConfig
+toString	src/profiler.h	/^  std::string toString() {$/;"	f	class:tbsys::util::Entry
+toString	src/profiler.h	/^  std::string toString(const std::string& pre1, const std::string& pre2) {$/;"	f	class:tbsys::util::Entry
+toString	src/profiler.h	/^  std::string toString(const std::string& pre1, const std::string& pre2, std::ostringstream &ss) {$/;"	f	class:tbsys::util::Entry
+trim	src/stringutil.cpp	/^    char *CStringUtil::trim(char *str, const char *what, int mode) $/;"	f	class:tbsys::CStringUtil
+tryAcquire	src/Lock.h	/^    bool tryAcquire() const$/;"	f	class:tbutil::LockT
+tryLock	src/Monitor.h	/^Monitor<T>::tryLock() const$/;"	f	class:tbutil::Monitor
+tryLock	src/Mutex.cpp	/^bool Mutex::tryLock() const$/;"	f	class:tbutil::Mutex
+tryLock	src/RecMutex.cpp	/^bool RecMutex::tryLock() const$/;"	f	class:tbutil::RecMutex
+tryLock	src/StaticMutex.h	/^inline bool StaticMutex::tryLock() const$/;"	f	class:tbutil::StaticMutex
+tryLock	src/tbrwlock.cpp	/^int CRLock::tryLock() const$/;"	f	class:CRLock
+tryLock	src/tbrwlock.cpp	/^int CWLock::tryLock() const$/;"	f	class:CWLock
+trylock	src/threadmutex.h	/^    int trylock () {$/;"	f	class:tbsys::CThreadMutex
+tryrdlock	src/tbrwlock.cpp	/^int CRWSimpleLock::tryrdlock()$/;"	f	class:CRWSimpleLock
+trywrlock	src/tbrwlock.cpp	/^int CRWSimpleLock::trywrlock()$/;"	f	class:CRWSimpleLock
+unlock	src/Monitor.h	/^Monitor<T>::unlock() const$/;"	f	class:tbutil::Monitor
+unlock	src/Mutex.cpp	/^void Mutex::unlock() const$/;"	f	class:tbutil::Mutex
+unlock	src/Mutex.cpp	/^void Mutex::unlock(LockState& state) const$/;"	f	class:tbutil::Mutex
+unlock	src/RecMutex.cpp	/^void RecMutex::unlock() const$/;"	f	class:tbutil::RecMutex
+unlock	src/RecMutex.cpp	/^void RecMutex::unlock(LockState& state) const$/;"	f	class:tbutil::RecMutex
+unlock	src/StaticMutex.h	/^StaticMutex::unlock(LockState& state) const$/;"	f	class:tbutil::StaticMutex
+unlock	src/StaticMutex.h	/^inline void StaticMutex::unlock() const$/;"	f	class:tbutil::StaticMutex
+unlock	src/tbrwlock.cpp	/^int CRLock::unlock() const$/;"	f	class:CRLock
+unlock	src/tbrwlock.cpp	/^int CRWSimpleLock::unlock()$/;"	f	class:CRWSimpleLock
+unlock	src/tbrwlock.cpp	/^int CWLock::unlock() const$/;"	f	class:CWLock
+unlock	src/threadmutex.h	/^    void unlock() {$/;"	f	class:tbsys::CThreadMutex
+unsettle	src/filequeue.h	/^    typedef struct unsettle {$/;"	s	namespace:tbsys
+unsettle	src/filequeue.h	/^    } unsettle;$/;"	t	namespace:tbsys	typeref:struct:tbsys::unsettle
+urlDecode	src/stringutil.cpp	/^    char *CStringUtil::urlDecode(const char *src, char *dest)$/;"	f	class:tbsys::CStringUtil
+util	src/profiler.cpp	/^    namespace util$/;"	n	namespace:tbsys	file:
+util	src/profiler.h	/^namespace tbsys { namespace util {$/;"	n	namespace:tbsys
+version	src/Service.cpp	/^void Service::version()$/;"	f	class:tbutil::Service
+wait	src/Cond.h	/^    wait(const Lock& lock) const$/;"	f	class:tbutil::Cond
+wait	src/Monitor.h	/^Monitor<T>::wait() const$/;"	f	class:tbutil::Monitor
+wait	src/defaultrunnable.cpp	/^void CDefaultRunnable::wait() {$/;"	f	class:tbsys::CDefaultRunnable
+wait	src/threadcond.h	/^    bool wait(int milliseconds = 0) {$/;"	f	class:tbsys::CThreadCond
+waitForRun	test/testTimer.cpp	/^    waitForRun()$/;"	f	class:DestroyTask
+waitForRun	test/testTimer.cpp	/^    waitForRun()$/;"	f	class:TestTask
+waitForShutdown	src/Service.cpp	/^int Service::waitForShutdown()$/;"	f	class:tbutil::Service
+waitForSignal	test/testthread.cpp	/^    void waitForSignal()$/;"	f	class:CondVar
+waitImpl	src/Cond.h	/^Cond::waitImpl(const M& mutex) const$/;"	f	class:tbutil::Cond
+waitTryLock	test/testthread.cpp	/^    void waitTryLock()$/;"	f	class:RecMutexTestThread
+waitTryLock	test/testthread.cpp	/^   void waitTryLock()$/;"	f	class:MonitorMutexTestThread
+what	src/Exception.cpp	/^const char* Exception::what() const throw()$/;"	f	class:tbutil::Exception
+what	src/bytebuffer.cpp	/^const char* ByteBuffer::out_of_range::what() const throw()$/;"	f	class:ByteBuffer::out_of_range
+willUnlock	src/Mutex.cpp	/^bool Mutex::willUnlock() const$/;"	f	class:tbutil::Mutex
+willUnlock	src/RecMutex.cpp	/^bool RecMutex::willUnlock() const$/;"	f	class:tbutil::RecMutex
+wlock	src/tbrwlock.h	/^        CWLock* wlock() const {return _wlock;} $/;"	f	class:tbsys::CRWLock
+wrap	src/bytebuffer.cpp	/^ByteBuffer & ByteBuffer::wrap(char* data, uint32_t offset, uint32_t size)$/;"	f	class:ByteBuffer
+writeData	src/filequeuethread.cpp	/^    int CFileQueueThread::writeData(void *data, int len)$/;"	f	class:tbsys::CFileQueueThread
+writeData	src/queuethread.cpp	/^    int CQueueThread::writeData(void *data, int len)$/;"	f	class:tbsys::CQueueThread
+writeHead	src/filequeue.cpp	/^    int CFileQueue::writeHead()$/;"	f	class:tbsys::CFileQueue
+writePidFile	src/process.cpp	/^    void CProcess::writePidFile(const char *szPidFile)$/;"	f	class:tbsys::CProcess
+write_filesize	src/filequeue.h	/^        int write_filesize;     \/\/ 写文件的大小$/;"	m	struct:tbsys::qinfo_head
+write_seqno	src/filequeue.h	/^        uint32_t write_seqno;        \/\/ 写文件的seqno$/;"	m	struct:tbsys::qinfo_head
+wrlock	src/tbrwlock.cpp	/^int CRWSimpleLock::wrlock()$/;"	f	class:CRWSimpleLock
+yield	src/TbThread.cpp	/^void Thread::yield()$/;"	f	class:tbutil::Thread
+~ByteBuffer	src/bytebuffer.cpp	/^ByteBuffer::~ByteBuffer()$/;"	f	class:ByteBuffer
+~CConfig	src/config.cpp	/^    CConfig::~CConfig()$/;"	f	class:tbsys::CConfig
+~CDefaultRunnable	src/defaultrunnable.cpp	/^CDefaultRunnable::~CDefaultRunnable() {$/;"	f	class:tbsys::CDefaultRunnable
+~CFileQueue	src/filequeue.cpp	/^    CFileQueue::~CFileQueue(void)$/;"	f	class:tbsys::CFileQueue
+~CFileQueueThread	src/filequeuethread.cpp	/^    CFileQueueThread::~CFileQueueThread(void)$/;"	f	class:tbsys::CFileQueueThread
+~CLockGuard	src/tblockguard.h	/^        ~CLockGuard()$/;"	f	class:tbsys::CLockGuard
+~CLogger	src/tblog.cpp	/^CLogger::~CLogger() {$/;"	f	class:tbsys::CLogger
+~CQueueThread	src/queuethread.cpp	/^    CQueueThread::~CQueueThread(void)$/;"	f	class:tbsys::CQueueThread
+~CRLock	src/tbrwlock.h	/^        ~CRLock() {}$/;"	f	class:tbsys::CRLock
+~CRLockGuard	src/tbrwlock.h	/^        ~CRLockGuard(){}$/;"	f	class:tbsys::CRLockGuard
+~CRWLock	src/tbrwlock.cpp	/^CRWLock::~CRWLock()$/;"	f	class:CRWLock
+~CRWSimpleLock	src/tbrwlock.cpp	/^CRWSimpleLock::~CRWSimpleLock()$/;"	f	class:CRWSimpleLock
+~CThreadCond	src/threadcond.h	/^    ~CThreadCond() {$/;"	f	class:tbsys::CThreadCond
+~CThreadGuard	src/threadmutex.h	/^    ~CThreadGuard()$/;"	f	class:tbsys::CThreadGuard
+~CThreadMutex	src/threadmutex.h	/^    ~CThreadMutex() {$/;"	f	class:tbsys::CThreadMutex
+~CWLock	src/tbrwlock.h	/^        ~CWLock() {}$/;"	f	class:tbsys::CWLock
+~CWLockGuard	src/tbrwlock.h	/^        ~CWLockGuard(){}$/;"	f	class:tbsys::CWLockGuard
+~Cond	src/Cond.cpp	/^Cond::~Cond()$/;"	f	class:tbutil::Cond
+~CtrlCHandler	src/CtrlCHandler.cpp	/^CtrlCHandler::~CtrlCHandler()$/;"	f	class:tbutil::CtrlCHandler
+~Entry	src/profiler.h	/^	~Entry() {$/;"	f	class:tbsys::util::Entry
+~Exception	src/Exception.cpp	/^Exception::~Exception() throw()$/;"	f	class:tbutil::Exception
+~Handle	src/Handle.h	/^    ~Handle()$/;"	f	class:tbutil::Handle
+~IQueueHandler	src/iqueuehandler.h	/^    virtual ~IQueueHandler() {}$/;"	f	class:tbsys::IQueueHandler
+~IllegalArgumentException	src/Exception.cpp	/^IllegalArgumentException::~IllegalArgumentException() throw()$/;"	f	class:tbutil::IllegalArgumentException
+~LinkList	src/linklist.h	/^LinkList<NodeT>::~LinkList()$/;"	f	class:tbsys::LinkList
+~LockT	src/Lock.h	/^    ~LockT()$/;"	f	class:tbutil::LockT
+~Monitor	src/Monitor.h	/^Monitor<T>::~Monitor()$/;"	f	class:tbutil::Monitor
+~Mutex	src/Mutex.cpp	/^Mutex::~Mutex()$/;"	f	class:tbutil::Mutex
+~NullHandleException	src/Exception.cpp	/^NullHandleException::~NullHandleException() throw()$/;"	f	class:tbutil::NullHandleException
+~RecMutex	src/RecMutex.cpp	/^RecMutex::~RecMutex()$/;"	f	class:tbutil::RecMutex
+~Runnable	src/runnable.h	/^    virtual ~Runnable() {$/;"	f	class:tbsys::Runnable
+~Service	src/Service.cpp	/^Service::~Service()$/;"	f	class:tbutil::Service
+~Shared	src/Shared.h	/^    virtual ~Shared()$/;"	f	class:tbutil::Shared
+~SimpleShared	src/Shared.h	/^    virtual ~SimpleShared()$/;"	f	class:tbutil::SimpleShared
+~Thread	src/TbThread.cpp	/^Thread::~Thread()$/;"	f	class:tbutil::Thread
+~ThreadLocal	src/profiler.h	/^	virtual ~ThreadLocal () {}$/;"	f	class:tbsys::util::ThreadLocal
+~ThreadPool	src/ThreadPool.cpp	/^ThreadPool::~ThreadPool()$/;"	f	class:tbutil::ThreadPool
+~ThreadPoolWorkItem	src/EventHandler.h	/^      virtual ~ThreadPoolWorkItem(){}$/;"	f	class:tbutil::ThreadPoolWorkItem
+~TimerTask	src/Timer.h	/^    virtual ~TimerTask() { }$/;"	f	class:tbutil::TimerTask
+~noncopyable	src/tbsys.h	/^    ~noncopyable() { }$/;"	f	class:tbutil::noncopyable
+~out_of_range	src/bytebuffer.h	/^                    virtual ~out_of_range() throw() {}$/;"	f	class:tbutil::ByteBuffer::out_of_range
+~testService	test/testService.cpp	/^     ~testService(){}$/;"	f	class:testService
