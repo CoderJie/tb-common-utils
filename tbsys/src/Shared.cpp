@@ -56,6 +56,9 @@ void Shared::__decRef()
     assert(_ref > 0);
     if(--_ref == 0)
     {
+        /**
+         * 默认的_noDelete为false，即引用计数为0时删除它管理的对象
+         **/
         doDelete = !_noDelete;
         _noDelete = true;
     }

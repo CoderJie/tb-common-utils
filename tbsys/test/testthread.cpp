@@ -348,6 +348,12 @@ void RecMutexTest::run()
 #include <list>
  
 using namespace tbutil;
+/**
+ * 在tbsys/test/testBase.h中定义
+ * typedef tbutil::Handle<testBase> testBasePtr; 
+ * 使用tbsys/src/Handle.h中定义的Handle智能指针类
+ * 注意：如果要用于智能指针，用户的类需要继承类Shared 
+ **/
 std::list<testBasePtr> allTests;
  
 int main()

@@ -25,8 +25,12 @@ template<class T> class Monitor;
 class Mutex;
 class RecMutex;
 /** 
- * @brief linux�߳���������
+ * @brief linux线程条件变量
  */
+/**
+ * 其实这里用public继承也行，但是不优雅
+ * 因为这里是一个 is-implemented-in-terms-of 而非 is-a 的关系
+ **/
 class Cond : private noncopyable
 {
 public:
@@ -35,25 +39,25 @@ public:
     ~Cond();
 
     /** 
-     * @brief ���źŸ��߳�
+     * @brief 发信号给线程
      */
     void signal();
 
     /** 
-     * @brief �㲥�źŸ��߳�
+     * @brief 广播信号给线程
      */
     void broadcast();
 
     /** 
-     * @brief �߳������ȴ� 
-     * 
-     * @param lock
-     * 
-     * @return 
+     * @brief 线程阻塞等待 
      */
     template <typename Lock> inline bool 
     wait(const Lock& lock) const
     {
+        /**
+         * 函数 acquired() 见 tbsys/src/Lock.h
+         * 只有类Mutex 或 类RecMutex 获得了锁或者刚开始构造的时候，_acquired才为true
+         **/
         if(!lock.acquired())
         {
 #ifdef _NO_EXCEPTION
@@ -67,16 +71,15 @@ public:
     }
 
     /** 
-     * @brief �߳������ȴ�,���ﶨʱʱ���Զ�����
-     * 
-     * @param lock
-     * @param timeout
-     * 
-     * @return 
+     * @brief 线程阻塞等待,到达定时时间自动运行
      */
     template <typename Lock> inline bool
     timedWait(const Lock& lock, const Time& timeout) const
     {
+        /**
+         * 函数 acquired() 见 tbsys/src/Lock.h
+         * 只有类Mutex 或 类RecMutex 获得了锁或者刚开始构造的时候，_acquired才为true
+         **/
         if(!lock.acquired())
         {
 #ifdef _NO_EXCEPTION
@@ -147,10 +150,7 @@ Cond::timedWaitImpl(const M& mutex, const Time& timeout) const
     timespec ts;
     ts.tv_sec = tv.tv_sec;
     ts.tv_nsec = tv.tv_usec * 1000;
-    /*timeval tv = Time::now(Time::Realtime);
-    timespec ts;
-    ts.tv_sec  = tv.tv_sec + timeout/1000;
-    ts.tv_nsec = tv.tv_usec * 1000 + ( timeout % 1000 ) * 1000000;*/
+    
     const int rc = pthread_cond_timedwait(&_cond, state.mutex, &ts);
     mutex.lock(state);
     

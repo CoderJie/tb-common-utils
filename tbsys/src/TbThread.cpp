@@ -51,6 +51,9 @@ static void* startHook(void* arg)
         Thread* rawThread = static_cast<Thread*>(arg);
         thread = rawThread;
         rawThread->__decRef();
+        /**
+         * 用户必须定义实现run函数
+         **/
         thread->run();
     }
     catch(...)
@@ -79,6 +82,10 @@ int Thread::start(size_t stackSize)
 
     __incRef();
 
+    /**
+     * 就是简单的调用系统函数pthread_create来启线程
+     * if分支加入了设置线程栈大小和各种返回值的检查，直接看else分支就好了
+     **/
     if(stackSize > 0)
     {
         pthread_attr_t attr;
@@ -246,6 +253,10 @@ void Thread::ssleep(const tbutil::Time& timeout)
 
 void Thread::yield()
 {
+    /**
+     * sched_yield()可以使用另一个级别等于或高于当前线程的线程先运行。
+     * 如果没有符合条件的线程，那么这个函数将会立刻返回然后继续执行当前线程的程序
+     **/
     sched_yield();
 }
 }//end namespace tbutil

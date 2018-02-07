@@ -57,12 +57,20 @@ namespace tbutil
 class noncopyable
 {
 protected:
- 
+    /**
+     * 不想让外面的用户直接构造一个类的对象，而希望用户只能构造这个类的子类
+     * 那就将构造函数/析构函数声明为protected
+     **/
     noncopyable() { }
     ~noncopyable() { }
 private:
- 
+    /**
+     * 构造拷贝
+     **/
     noncopyable(const noncopyable&);
+    /**
+     * 等号拷贝
+     **/
     const noncopyable& operator=(const noncopyable&);
 };
 

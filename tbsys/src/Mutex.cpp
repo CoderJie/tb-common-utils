@@ -51,6 +51,9 @@ void Mutex::lock() const
     assert( rt == 0 );
     if ( rt != 0 )
     {
+        /**
+         * EDEADLK: 可能发生资源死锁（Resource deadlock would occur）
+         **/
         if ( rt == EDEADLK )
         {
             TBSYS_LOG(ERROR,"%s","ThreadLockedException "); 
@@ -79,7 +82,10 @@ bool Mutex::tryLock() const
 {
     const int rt = pthread_mutex_trylock(&_mutex);
 #ifdef _NO_EXCEPTION
-    if ( rt != 0 && rt !=EBUSY )
+    /**
+     * EBUSY: 设备或资源忙碌（Device or resource busy）
+     **/
+    if ( rt != 0 && rt != EBUSY )
     {
         if ( rt == EDEADLK )
         {
