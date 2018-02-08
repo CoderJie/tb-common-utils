@@ -35,12 +35,22 @@
 #define TBSYS_LOG_LEVEL_WARN  1
 #define TBSYS_LOG_LEVEL_INFO  2
 #define TBSYS_LOG_LEVEL_DEBUG 3
+
 #define TBSYS_LOG_LEVEL(level) TBSYS_LOG_LEVEL_##level, __FILE__, __LINE__, __FUNCTION__
+
 #define TBSYS_LOG_NUM_LEVEL(level) level, __FILE__, __LINE__, __FUNCTION__
+
 #define TBSYS_LOGGER tbsys::CLogger::_logger
+
 #define TBSYS_PRINT(level, ...) TBSYS_LOGGER.logMessage(TBSYS_LOG_LEVEL(level), __VA_ARGS__)
+
+/**
+ * å¤§äºè®¾ç½®logçº§åˆ«åˆ™ä»€ä¹ˆéƒ½ä¸åšï¼Œä¸ä¼šè°ƒç”¨å‡½æ•°logMessage
+ **/
 #define TBSYS_LOG_BASE(level, ...) (TBSYS_LOG_LEVEL_##level>TBSYS_LOGGER._level) ? (void)0 : TBSYS_PRINT(level, __VA_ARGS__) 
+
 #define TBSYS_LOG(level, _fmt_, args...) ((TBSYS_LOG_LEVEL_##level>TBSYS_LOGGER._level) ? (void)0 : TBSYS_LOG_BASE(level, "[%ld] " _fmt_, pthread_self(), ##args))
+
 #define TBSYS_LOG_US(level, _fmt_, args...) \
   ((TBSYS_LOG_LEVEL_##level>TBSYS_LOGGER._level) ? (void)0 : TBSYS_LOG_BASE(level, "[%ld][%ld][%ld] " _fmt_, \
                                                             pthread_self(), tbsys::CLogger::get_cur_tv().tv_sec, \
@@ -51,59 +61,66 @@ using std::deque;
 using std::string;
 
 /** 
-* @brief ¼òµ¥µÄÈÕÖ¾ÏµÍ³ 
+* @brief ç®€å•çš„æ—¥å¿—ç³»ç»Ÿ 
 */
 class           CLogger {
 public:
     CLogger();
     ~CLogger();
+    
     /** 
-     * @brief 
+     * @brief é‡æ–°ç”Ÿæˆlogæ–‡ä»¶ 
      * 
      * @param filename
      * @param fmt
      */
     void rotateLog(const char *filename, const char *fmt = NULL);
+    
     /** 
-     * @brief ½«ÈÕÖ¾ÄÚÈİĞ´ÈëÎÄ¼ş
+     * @brief å°†æ—¥å¿—å†…å®¹å†™å…¥æ–‡ä»¶
      * 
-     * @param level ÈÕÖ¾µÄ¼¶±ğ
-     * @param file  ÈÕÖ¾ÄÚÈİËùÔÚµÄÎÄ¼ş
-     * @param line  ÈÕÖ¾ÄÚÈİËùÔÚµÄÎÄ¼şµÄĞĞºÅ
-     * @param function Ğ´ÈëÈÕÖ¾ÄÚÈİµÄº¯ÊıÃû³Æ
+     * @param level æ—¥å¿—çš„çº§åˆ«
+     * @param file  æ—¥å¿—å†…å®¹æ‰€åœ¨çš„æ–‡ä»¶
+     * @param line  æ—¥å¿—å†…å®¹æ‰€åœ¨çš„æ–‡ä»¶çš„è¡Œå·
+     * @param function å†™å…¥æ—¥å¿—å†…å®¹çš„å‡½æ•°åç§°
      * @param fmt
      * @param ...
      */
     void logMessage(int level, const char *file, int line, const char *function, const char *fmt, ...);
+    
     /** 
-     * @brief ÉèÖÃÈÕÖ¾µÄ¼¶±ğ
+     * @brief è®¾ç½®æ—¥å¿—çš„çº§åˆ«
      * 
      * @param level DEBUG|WARN|INFO|ERROR
      */
     void setLogLevel(const char *level);
+    
     /** 
-     * @brief ÉèÖÃÈÕÖ¾ÎÄ¼şµÄÃû³Æ
+     * @brief è®¾ç½®æ—¥å¿—æ–‡ä»¶çš„åç§°
      * 
-     * @param filename ÈÕÖ¾ÎÄ¼şµÄÃû³Æ
+     * @param filename æ—¥å¿—æ–‡ä»¶çš„åç§°
      */
     void setFileName(const char *filename, bool flag = false);
+    
     /** 
-     * @brief ¼ì²âÎÄ¼şÊÇ·ñÒÑ¾­´ò¿ª,±ê×¼Êä³ö,´íÎóÊä³öÖØ¶¨Ïò
+     * @brief æ£€æµ‹æ–‡ä»¶æ˜¯å¦å·²ç»æ‰“å¼€,æ ‡å‡†è¾“å‡º,é”™è¯¯è¾“å‡ºé‡å®šå‘
      */
     void checkFile();
     void setCheck(int v) {_check = v;}
+    
     /** 
-     * @brief ÉèÖÃÈÕÖ¾ÎÄ¼şÎÄ¼şµÄ´óĞ¡,´ïµ½maxFileSize¾ÍĞÂ´ò¿ªÒ»¸öÎÄ¼ş
-     * Èç¹û²»ÉèÖÃ´ËÏî£¬ÈÕÖ¾ÏµÍ³»áºöÂÔÈÕÖ¾¹ö¶¯
+     * @brief è®¾ç½®æ—¥å¿—æ–‡ä»¶æ–‡ä»¶çš„å¤§å°,è¾¾åˆ°maxFileSizeå°±æ–°æ‰“å¼€ä¸€ä¸ªæ–‡ä»¶
+     * å¦‚æœä¸è®¾ç½®æ­¤é¡¹ï¼Œæ—¥å¿—ç³»ç»Ÿä¼šå¿½ç•¥æ—¥å¿—æ»šåŠ¨
      * 
-     * @param maxFileSize ÈÕÖ¾ÎÄ¼şµÄ´óĞ¡
+     * @param maxFileSize æ—¥å¿—æ–‡ä»¶çš„å¤§å°
      */
     void setMaxFileSize( int64_t maxFileSize=0x40000000);
+    
     /** 
-     * @brief ±£Áô×î½ümaxFileIndex¸öÈÕÖ¾ÎÄ¼ş£¬³¬³ömaxFileIndex¸öÈÕÖ¾ÎÄ¼ş
-     * »á°´Ê±¼äÏÈºóÉ¾³ı,µ«½ø³ÌÖØÆôºóÈÕÖ¾ÏµÍ³»á°´Ê±¼äÏÈºóÖØĞÂÍ³¼Æ
+     * @brief ä¿ç•™æœ€è¿‘maxFileIndexä¸ªæ—¥å¿—æ–‡ä»¶ï¼Œè¶…å‡ºmaxFileIndexä¸ªæ—¥å¿—æ–‡ä»¶
+     * ä¼šæŒ‰æ—¶é—´å…ˆååˆ é™¤,ä½†è¿›ç¨‹é‡å¯åæ—¥å¿—ç³»ç»Ÿä¼šæŒ‰æ—¶é—´å…ˆåé‡æ–°ç»Ÿè®¡
      * 
-     * @param maxFileIndex ±£ÁôÎÄ¼şµÄ×î´ó¸öÊı
+     * @param maxFileIndex ä¿ç•™æ–‡ä»¶çš„æœ€å¤§ä¸ªæ•°
      */
     void setMaxFileIndex( int maxFileIndex= 0x0F);
 
@@ -117,19 +134,27 @@ public:
 private:
     int _fd;
     char *_name;
+    /* å¯¹fdå’Œnameåšæ£€æŸ¥çš„æ ‡è®° */
     int _check;
+    /* æœ€å¤§æ–‡ä»¶æ•°é‡ */
     size_t _maxFileIndex;
+    /* æœ€å¤§æ–‡ä»¶å¤§å° */
     int64_t _maxFileSize;
+    /* æ˜¯å¦å±è”½æ ‡å‡†è¾“å‡ºå’Œé”™è¯¯å†™å…¥logæ–‡ä»¶ï¼Œfalseè¡¨ç¤ºä¸å±è”½ */
     bool _flag;
 
 public:
+    /* å•ä¾‹æ¨¡å¼ */
     static CLogger _logger;
     int _level;
 
 private:
+    /* ç»´æŠ¤logæ–‡ä»¶ä¸ªæ•°çš„é˜Ÿåˆ— */
     std::deque<std::string> _fileList;
-    static const char *const _errstr[];   
+    static const char *const _errstr[];
+    /* è´Ÿè´£ä¿æŠ¤æ—¥å¿—æ–‡ä»¶å¤§å° */
     pthread_mutex_t _fileSizeMutex;
+    /* è´Ÿè´£ä¿æŠ¤ä¿ç•™æ–‡ä»¶æœ€å¤§ä¸ªæ•° */
     pthread_mutex_t _fileIndexMutex; 
 };
 

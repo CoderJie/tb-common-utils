@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     TBSYS_LOG(ERROR, "xxx: %s:%d", "xxxx", 1);
     
     TBSYS_LOGGER.setFileName("/tmp/test.txt");
-    
+   
     for(int i=0; i<50; i++) {
         TBSYS_LOG(ERROR, "xxx: %s:%d", "xxxx", i);
         getchar();
