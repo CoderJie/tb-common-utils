@@ -18,15 +18,16 @@
 namespace tbsys {
 
 /**
- * ¹¹Ôì
+ * æ„é€ 
  */
 CDefaultRunnable::CDefaultRunnable(int threadCount) {
     _stop = false;
     _threadCount = threadCount;
     _thread = NULL;
 }
+
 /*
- * Îö¹¹
+ * ææ„
  */
 CDefaultRunnable::~CDefaultRunnable() {
     if (_thread) {
@@ -36,12 +37,12 @@ CDefaultRunnable::~CDefaultRunnable() {
 }
 
 /**
- * ÉèÖÃÏß³ÌÊı
+ * è®¾ç½®çº¿ç¨‹æ•°
  */
 void CDefaultRunnable::setThreadCount(int threadCount)
 {
     if (_thread != NULL) {
-        TBSYS_LOG(ERROR, "ÒÑ¾­ÔÚÔËĞĞÁË²»ÄÜÉèÖÃÏß³ÌÊı");
+        TBSYS_LOG(ERROR, "already run, can't set threadCount");
         return;
     }
     _threadCount = threadCount;
@@ -54,7 +55,7 @@ void CDefaultRunnable::start() {
         return;
     }
     _thread = new CThread[_threadCount];
-    for (int i=0; i<_threadCount; i++)
+    for (int i = 0; i < _threadCount; i++)
     {
         _thread[i].start(this, (void*)((long)i));
     }
@@ -69,7 +70,7 @@ void CDefaultRunnable::stop() {
 void CDefaultRunnable::wait() {
     if (_thread != NULL)
     {
-        for (int i=0; i<_threadCount; i++)
+        for (int i = 0; i < _threadCount; i++)
         {
             _thread[i].join();
         }
