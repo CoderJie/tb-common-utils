@@ -21,13 +21,13 @@
 namespace tbsys {
 
 /** 
- * @brief ��linux�̼߳򵥷�װ 
+ * @brief 对linux线程简单封装 
  */
 class CThread {
 
 public:
     /**
-     * ���캯��
+     * 构造函数
      */
     CThread() {
         tid = 0;
@@ -35,16 +35,20 @@ public:
     }
 
     /**
-     * ��һ���̣߳���ʼ����
+     * 起一个线程，开始运行
      */
     void start(Runnable *r, void *a) {
         runnable = r;
         args = a;
+        /**
+         * 该函数并不是将一个真正的线程函数传给pthread_create，而是将hook函数传给它，这样就可以突破需要传递静态成员函数的限制
+         * 通过如此对线程的封装就可以将线程面向对象化了，也可以很方便地控制与管理线程
+         **/
         pthread_create(&tid, NULL, CThread::hook, this);
     }
 
     /**
-     * �ȴ��߳��˳�
+     * 等待线程退出
      */
     void join() {
         if (tid) {
@@ -55,7 +59,7 @@ public:
     }
 
     /**
-     * �õ�Runnable����
+     * 得到Runnable对象
      * 
      * @return Runnable
      */
@@ -64,7 +68,7 @@ public:
     }
 
     /**
-     * �õ��ص�����
+     * 得到回调参数
      * 
      * @return args
      */
@@ -73,17 +77,16 @@ public:
     }
     
     /***
-     * �õ��̵߳Ľ���ID
+     * 得到线程的进程ID
      */
     int getpid() {
         return pid;
     }
 
     /**
-     * �̵߳Ļص�����
+     * 线程的回调函数
      * 
      */
-
     static void *hook(void *arg) {
         CThread *thread = (CThread*) arg;
         thread->pid = gettid();
@@ -97,7 +100,7 @@ public:
     
 private:    
     /**
-     * �õ�tid��
+     * 得到tid号
      */
     #ifdef _syscall0
     static _syscall0(pid_t,gettid)
@@ -107,7 +110,7 @@ private:
 
 private:
     pthread_t tid;      // pthread_self() id
-    int pid;            // �̵߳Ľ���ID
+    int pid;            // 线程的进程ID
     Runnable *runnable;
     void *args;
 };
